@@ -17,6 +17,7 @@ Deze botstructuur maakt van de evidence map een reproduceerbare workflow. Bots e
 - `scripts/validate_evidence_map.py`: lokale en CI-validatie.
 - `data/index.csv`: botvriendelijke index van records en prioritaire discovery-items.
 - `data/source-check-queue.csv`: queue met primaire bronkandidaten en exact te testen claims.
+- `data/expert-review-queue.csv`: queue met exacte expertreviewvragen voor brongecheckte records.
 
 ## Workflow
 
@@ -50,5 +51,15 @@ Deze botstructuur maakt van de evidence map een reproduceerbare workflow. Bots e
 - Dagelijkse triage: nieuwe issues labelen en ontbrekende velden terugvragen.
 - Source-check batch: 3 tot 5 `needs_primary_source_check` items per ronde naar primaire bron zoeken.
 - Source-check queue: kandidaatbronnen toevoegen aan `data/source-check-queue.csv`, daarna pas extraheren.
+- Expert-review queue: source-checked records met claimrisico toevoegen aan `data/expert-review-queue.csv`.
 - Trial monitor: ClinicalTrials.gov-items opnieuw controleren bij statuswijziging.
 - Publication gate: `python scripts/validate_evidence_map.py` uitvoeren voor elke merge.
+
+## Expertreview batch 001
+
+De eerste expertreviewbatch staat in `expert-review-batch-001-v0.1.md`. De vier MS Research-records in deze batch hebben status `expert_review_requested`:
+
+- `msresearch-pira-choroid-plexus`: PIRA-causaliteit en individuele prognose voorkomen.
+- `msresearch-smouldering-ms-fingerprint`: PRL, SEL, TSPO-PET en histopathologische CAL niet gelijkstellen.
+- `msresearch-eye-scans`: OCT-drempels, optic neuritis en populatiegrenzen toetsen.
+- `msresearch-brain-age`: machine-learning biomarker niet als individuele prognose of superioriteitsclaim presenteren.

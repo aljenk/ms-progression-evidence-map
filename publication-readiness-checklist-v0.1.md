@@ -25,6 +25,7 @@ Een item mag naar `published` als alle punten waar zijn:
 Een batch mag publiek als:
 
 - minimaal een arts of domeinexpert de methodologie heeft gezien, of de site duidelijk als pre-review is gelabeld.
+- elk item met status `expert_review_requested` zichtbaar als pre-review is gelabeld.
 - er geen behandeladvies of repurposingadvies in de teksten staat.
 - elke A- of B-claim terugleidbaar is naar een klinische bron of trialregister.
 - elke D-claim zichtbaar als computationele hypothese is gelabeld.
@@ -39,4 +40,3 @@ Niet publiceren als:
 - AlphaFold, docking of AlphaMissense als klinisch bewijs wordt gepresenteerd.
 - veiligheidsinformatie ontbreekt bij interventies.
 - bronlinks ontbreken of niet meer werken.
-

@@ -32,12 +32,14 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 - `bot-operating-model-v0.1.md`: live botworkflow met intake, source-check, expertreview en publicatiegate.
 - `data/index.csv`: botvriendelijke index voor records en prioritaire discovery-items.
 - `data/source-check-queue.csv`: uitvoerbare queue met primaire bronkandidaten per batch.
+- `data/expert-review-queue.csv`: queue met exacte expertreviewvragen voor brongecheckte records.
 - `.github/ISSUE_TEMPLATE/`: issue-templates voor evidence-intake, source-check en expertreview.
 - `.github/workflows/evidence-map-checks.yml`: automatische validatie op push en pull request.
 - `scripts/validate_evidence_map.py`: lokale validator voor CSV, JSON, index en guardrails.
 - `CHANGELOG.md`: wijzigingen per release of werkbatch.
 - `source-check-batch-001-v0.1.md`: eerste primaire bronkandidaten voor MS Research-discovery items.
 - `source-extraction-batch-001-v0.1.md`: abstract-extractie voor batch 001 en draft-promotie van vier items.
+- `expert-review-batch-001-v0.1.md`: expertreviewvragen voor de eerste vier MS Research-records.
 
 ## Eerste uitgewerkte records
 
@@ -62,7 +64,7 @@ MS Research is toegevoegd als Nederlandse source-discovery en stakeholderbron. D
 
 De eerste broncheckbatch staat in `source-check-batch-001-v0.1.md` en `data/source-check-queue.csv`.
 
-De eerste abstract-extractie staat in `source-extraction-batch-001-v0.1.md`. Vier MS Research-items zijn daarna met open-access full-text controle of primaire PubMed-bron naar `source_checked` gezet en als JSON-record toegevoegd.
+De eerste abstract-extractie staat in `source-extraction-batch-001-v0.1.md`. Vier MS Research-items zijn daarna met open-access full-text controle of primaire PubMed-bron naar JSON-record gezet. De bijbehorende expertreviewvragen staan in `expert-review-batch-001-v0.1.md` en `data/expert-review-queue.csv`; deze records hebben status `expert_review_requested` totdat feedback is verwerkt.
 
 ## GitHub-moment
 
@@ -80,6 +82,10 @@ De eerste botstructuur is ingericht in GitHub:
 - `.github/labels.yml` legt de triagelabels vast
 
 Deze structuur doet nog geen automatische medische beoordeling. Zij bewaakt alleen workflow, bronstatus, claimbeperking en publicatiegate.
+
+## GitHub Pages voorbereiding
+
+Een publieke GitHub Pages-laag kan nu technisch worden voorbereid op basis van `data/index.csv`, `data/source-check-queue.csv`, `data/expert-review-queue.csv` en `evidence-records/*.json`. De site moet reviewstatussen zichtbaar tonen. Items met `expert_review_requested` mogen als pre-review researchkaart zichtbaar zijn, maar niet als gepubliceerde evidenceclaim.
 
 ## Centrale lijn
 

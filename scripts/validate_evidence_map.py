@@ -14,6 +14,7 @@ SEED = ROOT / "seed-items-v0.1.csv"
 RECORD_DIR = ROOT / "evidence-records"
 INDEX = ROOT / "data" / "index.csv"
 SOURCE_QUEUE = ROOT / "data" / "source-check-queue.csv"
+EXPERT_REVIEW_QUEUE = ROOT / "data" / "expert-review-queue.csv"
 
 REQUIRED_JSON_FIELDS = {
     "id",
@@ -47,6 +48,15 @@ VALID_SOURCE_QUEUE_STATUS = {
     "extracted",
     "rejected",
 }
+
+VALID_EXPERT_REVIEW_QUEUE_STATUS = {
+    "ready_to_request",
+    "requested",
+    "received",
+    "closed",
+}
+
+VALID_EXPERT_REVIEW_RISK = {"high", "medium", "low"}
 
 
 def fail(message: str) -> None:
@@ -181,6 +191,53 @@ def validate_source_queue(seed_rows: list[dict[str, str]]) -> list[dict[str, str
     return rows
 
 
+def validate_expert_review_queue(seed_rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    if not EXPERT_REVIEW_QUEUE.exists():
+        fail(f"missing {EXPERT_REVIEW_QUEUE.relative_to(ROOT)}")
+
+    with EXPERT_REVIEW_QUEUE.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        rows = list(reader)
+
+    required = {
+        "review_id",
+        "item_id",
+        "review_focus",
+        "risk_level",
+        "review_question",
+        "source_basis",
+        "queue_status",
+        "next_action",
+    }
+    missing = required - set(reader.fieldnames or [])
+    if missing:
+        fail(f"expert review queue missing columns: {sorted(missing)}")
+
+    seed_ids = {row["id"] for row in seed_rows}
+    seen: set[str] = set()
+    for row in rows:
+        review_id = row["review_id"].strip()
+        item_id = row["item_id"].strip()
+        if not review_id:
+            fail("expert review queue row has empty review_id")
+        if review_id in seen:
+            fail(f"duplicate expert review id: {review_id}")
+        seen.add(review_id)
+        if item_id not in seed_ids:
+            fail(f"expert review queue id not found in seed file: {item_id}")
+        risk_level = row["risk_level"].strip()
+        if risk_level not in VALID_EXPERT_REVIEW_RISK:
+            fail(f"{review_id} has invalid risk_level: {risk_level}")
+        status = row["queue_status"].strip()
+        if status not in VALID_EXPERT_REVIEW_QUEUE_STATUS:
+            fail(f"{review_id} has invalid queue_status: {status}")
+        for field in ("review_focus", "review_question", "source_basis", "next_action"):
+            if not row[field].strip():
+                fail(f"{review_id} has empty {field}")
+
+    return rows
+
+
 def validate_text() -> None:
     for path in ROOT.rglob("*"):
         if ".git" in path.parts or not path.is_file():
@@ -196,15 +253,28 @@ def main() -> None:
     records = validate_records()
     validate_index(seed_rows)
     source_queue_rows = validate_source_queue(seed_rows)
+    expert_review_queue_rows = validate_expert_review_queue(seed_rows)
     validate_text()
     msresearch_rows = sum(1 for row in seed_rows if row["id"].startswith("msresearch-"))
     source_checked = sum(1 for row in seed_rows if row["review_status"] == "source_checked")
+    expert_review_requested = sum(
+        1 for row in seed_rows if row["review_status"] == "expert_review_requested"
+    )
+    source_checked_or_later = sum(
+        1
+        for row in seed_rows
+        if row["review_status"]
+        in {"source_checked", "expert_review_requested", "expert_reviewed", "published"}
+    )
     print("EVIDENCE_MAP_VALIDATION_OK")
     print(f"seed_rows={len(seed_rows)}")
     print(f"json_records={len(records)}")
     print(f"source_checked_seed_rows={source_checked}")
+    print(f"expert_review_requested_seed_rows={expert_review_requested}")
+    print(f"source_checked_or_later_seed_rows={source_checked_or_later}")
     print(f"msresearch_seed_rows={msresearch_rows}")
     print(f"source_queue_rows={len(source_queue_rows)}")
+    print(f"expert_review_queue_rows={len(expert_review_queue_rows)}")
 
 
 if __name__ == "__main__":
