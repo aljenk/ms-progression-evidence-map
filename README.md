@@ -51,6 +51,10 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 - `evidence-records/gfap-serum-biomarker.json`
 - `evidence-records/paramagnetic-rim-lesions.json`
 - `evidence-records/slowly-expanding-lesions.json`
+- `evidence-records/msresearch-pira-choroid-plexus.json`
+- `evidence-records/msresearch-smouldering-ms-fingerprint.json`
+- `evidence-records/msresearch-eye-scans.json`
+- `evidence-records/msresearch-brain-age.json`
 
 ## Source discovery
 
@@ -58,7 +62,7 @@ MS Research is toegevoegd als Nederlandse source-discovery en stakeholderbron. D
 
 De eerste broncheckbatch staat in `source-check-batch-001-v0.1.md` en `data/source-check-queue.csv`.
 
-De eerste abstract-extractie staat in `source-extraction-batch-001-v0.1.md`. Vier MS Research-items zijn op basis daarvan naar `draft` gezet, nog niet naar `source_checked`.
+De eerste abstract-extractie staat in `source-extraction-batch-001-v0.1.md`. Vier MS Research-items zijn daarna met open-access full-text controle of primaire PubMed-bron naar `source_checked` gezet en als JSON-record toegevoegd.
 
 ## GitHub-moment
 

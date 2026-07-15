@@ -1,0 +1,53 @@
+{
+  "id": "msresearch-eye-scans",
+  "title": "OCT-oogscans als prognostische biomarker bij MS",
+  "category": "biomarker",
+  "subcategory": "OCT; retinal layer thickness",
+  "ms_context": [
+    "MS",
+    "RRMS",
+    "progressive MS"
+  ],
+  "mechanism_summary": "OCT meet retinale lagen zoals pRNFL en GCIPL. Dunner worden van deze lagen kan neuroaxonale schade weerspiegelen en is in longitudinale studies geassocieerd met latere disability progression.",
+  "patient_summary": "Oogscans kunnen in onderzoek informatie geven over zenuwschade bij MS. Ze vervangen geen neurologisch oordeel en zijn geen zelfstandig behandelkompas.",
+  "clinical_summary": "Een systematische review en meta-analyse vond dat lagere pRNFL- en GCIPL-diktes en hogere jaarlijkse thinning rates geassocieerd waren met toekomstige MS disability progression. Een eerdere review vond vooral RRMS-gedomineerd bewijs.",
+  "research_summary": "OCT is geschikt als prognostische biomarkerlaag, mits drempels, optic-neuritis-correctie, populatie en follow-up zichtbaar blijven.",
+  "outcomes": [
+    "OCT",
+    "EDSS",
+    "cognition",
+    "CDP"
+  ],
+  "evidence_level": "B",
+  "evidence_label": "Systematische reviews van longitudinale MS-cohorten koppelen OCT-maten aan disability progression, met populatie- en standaardisatiebeperkingen.",
+  "trial_status": "not_applicable",
+  "safety_notes": "Niet van toepassing als biomarker. Interpretatierisico: OCT-drempels niet los gebruiken voor individuele behandelkeuzes.",
+  "open_questions": [
+    "Welke OCT-drempels zijn reproduceerbaar genoeg voor publieke communicatie?",
+    "Hoe moet optic neuritis in de interpretatie worden vermeld?",
+    "Is de bewijsbasis voldoende voor progressieve MS of vooral voor RRMS?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40424561/",
+      "type": "systematic_review_meta_analysis",
+      "date_checked": "2026-07-15",
+      "claim": "Review en meta-analyse beschrijven associaties tussen pRNFL/GCIPL-drempels en thinning rates met toekomstige disability progression in MS."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12153945/",
+      "type": "open_access_full_text",
+      "date_checked": "2026-07-15",
+      "claim": "Full text rapporteert 14 longitudinale studies en 3683 deelnemers, met pRNFL en GCIPL thresholds en annualized thinning rates als prognostische markers."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36372866/",
+      "type": "systematic_review",
+      "date_checked": "2026-07-15",
+      "claim": "Review beschrijft dat lage pRNFL/mGCIPL en hogere jaarlijkse thinning geassocieerd zijn met disability progression, met veel RRMS-studies."
+    }
+  ],
+  "last_reviewed": "2026-07-15",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen medisch advies. OCT-resultaten moeten door bevoegde clinici in context worden geinterpreteerd."
+}

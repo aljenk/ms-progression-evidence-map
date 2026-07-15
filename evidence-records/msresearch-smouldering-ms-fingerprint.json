@@ -1,0 +1,59 @@
+{
+  "id": "msresearch-smouldering-ms-fingerprint",
+  "title": "Smeulende MS en chronic active lesions",
+  "category": "mechanism",
+  "subcategory": "chronic active lesions; PRL; SEL",
+  "ms_context": [
+    "MS",
+    "progressive MS",
+    "PIRA"
+  ],
+  "mechanism_summary": "Chronic active lesions worden gezien als beeldvormings- en pathologiecluster rond smouldering neuroinflammation. PRL's en slowly expanding lesions zijn in-vivo correlaten, maar meten niet exact hetzelfde als histopathologie.",
+  "patient_summary": "Sommige MS-laesies kunnen tekenen van aanhoudende ontsteking hebben. MRI-markers zoals randlaesies en langzaam groeiende laesies helpen onderzoek, maar zijn niet hetzelfde als een behandeladvies.",
+  "clinical_summary": "Reviews en consensus beschrijven PRL's, SELs en TSPO-PET-laesies als kandidaatmarkers voor chronic active lesions. De consensus benadrukt dat standaardisatie en histopathologische gelijkwaardigheid nog beperkingen zijn.",
+  "research_summary": "Dit record vormt de kapstok voor smouldering MS, PRL, SEL en chronic active lesion terminologie. Het moet worden gekoppeld aan bestaande PRL- en SEL-records en aan expertreview van terminologie.",
+  "outcomes": [
+    "MRI",
+    "CDP",
+    "PIRA",
+    "brain volume"
+  ],
+  "evidence_level": "C",
+  "evidence_label": "Mechanistisch en imaging-biomarker bewijs, met consensus over definities maar belangrijke standaardisatiegaten.",
+  "trial_status": "not_applicable",
+  "safety_notes": "Niet van toepassing als mechanisme. Communicatierisico: imagingmarkers niet presenteren als individuele prognose of therapiekeuze.",
+  "open_questions": [
+    "Welke termen moeten in patiententaal worden gebruikt: smeulende MS, chronic active lesions, PRL of SEL?",
+    "Wanneer is PRL of SEL voldoende gestandaardiseerd voor publieke kaartfilters?",
+    "Hoe voorkomen we dat histopathologie en MRI-correlaten worden gelijkgesteld?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39711984/",
+      "type": "peer_reviewed_review",
+      "date_checked": "2026-07-15",
+      "claim": "Review beschrijft chronic active white matter lesions als onderdeel van smouldering neuroinflammation en benoemt PRL's en SELs als in-vivo imagingcorrelaten."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11660293/",
+      "type": "open_access_full_text",
+      "date_checked": "2026-07-15",
+      "claim": "Full text concludeert dat PRL's, SELs en TSPO-PET positieve laesies drie imagingbenaderingen zijn voor CALs, met elk voor- en nadelen."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38226694/",
+      "type": "peer_reviewed_consensus",
+      "date_checked": "2026-07-15",
+      "claim": "Consensus statement beschrijft PRL, MRI-defined SEL en TSPO-PET-laesies als kandidaatbiomarkers van CAL, maar niet met gelijke sensitiviteit en specificiteit als histopathologische CAL."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11370808/",
+      "type": "open_access_full_text",
+      "date_checked": "2026-07-15",
+      "claim": "Full text benadrukt gebrek aan standaardisatie voor identificatie, kwantificatie en monitoring van CAL-imagingmarkers."
+    }
+  ],
+  "last_reviewed": "2026-07-15",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen medisch advies. MRI-biomarkers vereisen klinische en radiologische context."
+}

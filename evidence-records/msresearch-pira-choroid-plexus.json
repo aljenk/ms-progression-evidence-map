@@ -1,0 +1,54 @@
+{
+  "id": "msresearch-pira-choroid-plexus",
+  "title": "Choroid plexus volume als PIRA-gerelateerde biomarkerhypothese",
+  "category": "biomarker",
+  "subcategory": "choroid plexus; CSF barrier",
+  "ms_context": [
+    "MS",
+    "PIRA",
+    "progressive MS"
+  ],
+  "mechanism_summary": "De choroid plexus is betrokken bij hersenvochtproductie en immuuncelverkeer. Vergroting kan in MS samenhangen met neuroaxonale schade en relapse-vrije progressie, maar causaliteit is niet aangetoond.",
+  "patient_summary": "Onderzoek suggereert dat grootte van de choroid plexus op MRI iets kan zeggen over zenuwschade en progressie zonder relapse. Dit is geen losse prognose voor een persoon en geen behandeladvies.",
+  "clinical_summary": "Een prospectieve multicenterstudie koppelde choroid plexus volume aan serum NfL en hoger risico op EDSS-worsening en PIRA. Een vroege RRMS-studie koppelde choroid plexus volume en PRL's aan cognitieve progressie onafhankelijk van relapse en MRI-activiteit.",
+  "research_summary": "De bronbasis ondersteunt opname als biomarker- en mechanismecluster rond blood-CSF barrier, smouldering inflammation en relapse-vrije progressie. De claim moet beperkt blijven tot onderzochte cohorten en uitkomsten.",
+  "outcomes": [
+    "NfL",
+    "EDSS",
+    "PIRA",
+    "cognition",
+    "MRI"
+  ],
+  "evidence_level": "C",
+  "evidence_label": "Biomarker- en mechanistisch bewijs uit longitudinale MS-cohorten; nog geen klinisch beslisinstrument.",
+  "trial_status": "not_applicable",
+  "safety_notes": "Niet van toepassing als biomarker. Interpretatierisico: overgeneralisatie naar individuele prognose of behandelkeuze.",
+  "open_questions": [
+    "Hoe robuust is de associatie na correctie voor hersenvolume en inflammatoire activiteit?",
+    "Welke MRI-methode voor choroid plexus volume is reproduceerbaar genoeg?",
+    "Moet dit als eigen biomarkerrecord of als onderdeel van smouldering-MS-cluster worden gepubliceerd?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41666922/",
+      "type": "peer_reviewed_publication",
+      "date_checked": "2026-07-15",
+      "claim": "PubMed/PMC abstract en full text beschrijven een prospectieve multicenter MS-studie waarin choroid plexus volume samenhangt met serum NfL en verhoogd risico op disability worsening en PIRA."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12923943/",
+      "type": "open_access_full_text",
+      "date_checked": "2026-07-15",
+      "claim": "Full text beschrijft beperkingen: causaliteit tussen choroid plexus vergroting en neuroaxonale schade kan bij mensen niet worden vastgesteld."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42420786/",
+      "type": "peer_reviewed_publication_metadata",
+      "date_checked": "2026-07-15",
+      "claim": "PubMed abstract beschrijft associatie van PRL's en choroid plexus volume bij diagnose met cognitieve progressie onafhankelijk van relapse en MRI-activiteit in vroege RRMS."
+    }
+  ],
+  "last_reviewed": "2026-07-15",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen medisch advies. Biomarkers moeten altijd in klinische context worden beoordeeld."
+}
