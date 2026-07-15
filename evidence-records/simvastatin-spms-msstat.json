@@ -1,0 +1,77 @@
+{
+  "id": "simvastatin-spms-msstat",
+  "title": "Simvastatin bij secondary progressive MS",
+  "category": "intervention",
+  "subcategory": "repurposing and neuroprotection",
+  "ms_context": [
+    "SPMS",
+    "progressive MS"
+  ],
+  "mechanism_summary": "Simvastatin is een statine met voorgestelde immunomodulerende en neuroprotectieve effecten. In MS is het onderzocht als repurposing-kandidaat bij SPMS.",
+  "patient_summary": "Simvastatin had in een fase 2-studie een gunstig signaal op hersenatrofie, maar een latere fase 3-studie liet geen effect zien op disability progression. Gebruik bij MS hoort daarom niet als zelfbehandeling te worden gepresenteerd.",
+  "clinical_summary": "MS-STAT was een fase 2-studie met whole-brain atrophy als primaire uitkomst. MS-STAT2 was een fase 3-studie met tijd tot 6-maands EDSS-confirmed disability progression als primaire uitkomst.",
+  "research_summary": "Deze entry is een goed voorbeeld van living evidence: een aantrekkelijk fase 2-signaal werd in fase 3 niet bevestigd voor disability progression.",
+  "outcomes": [
+    "brain volume",
+    "CDP",
+    "EDSS",
+    "safety"
+  ],
+  "evidence_level": "A",
+  "evidence_label": "Fase 3-publicatie beschikbaar. De kernclaim is negatief voor vertraging van disability progression in SPMS.",
+  "trial_status": "completed_published",
+  "trial": {
+    "phase2": {
+      "nct_id": "NCT00647348",
+      "trial_name": "MS-STAT",
+      "phase": "PHASE2",
+      "enrollment_actual": 140,
+      "primary_outcome": "Percentage change in whole brain volume",
+      "timeframe": "24 months"
+    },
+    "phase3": {
+      "nct_id": "NCT03387670",
+      "trial_name": "MS-STAT2",
+      "phase": "PHASE3",
+      "primary_outcome": "Time to 6-month EDSS confirmed disability progression",
+      "publication_year": "2025"
+    }
+  },
+  "result_summary": "Fase 2 MS-STAT abstract vermeldt lagere annualised brain atrophy rate met simvastatin dan placebo. Fase 3 MS-STAT2 abstract vermeldt 6-maands confirmed disability progression bij 173 van 482 placebo-deelnemers en 192 van 482 simvastatin-deelnemers, adjusted hazard ratio 1.13, 95% CI 0.91 to 1.39, P=0.26, en concludeert geen effect op vertraging van disability progression.",
+  "safety_notes": "Fase 3 MS-STAT2 abstract vermeldt geen nieuwe veiligheidsproblemen, maar wel een ernstige bijwerking rhabdomyolysis in de simvastatin-groep. Het abstract stelt dat simvastatin-gebruik bij MS beperkt moet blijven tot bestaande vasculaire indicaties.",
+  "open_questions": [
+    "Hoe tonen we fase 2 positief en fase 3 negatief in een enkele publieke kaart zonder verwarring?",
+    "Moet repurposing standaard een extra waarschuwing krijgen?",
+    "Welke uitleg is nodig voor verschil tussen hersenatrofie en disability progression?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24655729/",
+      "type": "peer_reviewed_publication",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed abstract beschrijft MS-STAT als fase 2-studie waarin high-dose simvastatin de annualised whole-brain atrophy rate verlaagde versus placebo."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41045938/",
+      "type": "peer_reviewed_publication",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed abstract beschrijft MS-STAT2 als fase 3-studie die geen effect van simvastatin liet zien op vertraging van disability progression in SPMS."
+    },
+    {
+      "url": "https://clinicaltrials.gov/study/NCT00647348",
+      "type": "trial_registry",
+      "date_checked": "2026-07-13",
+      "claim": "ClinicalTrials.gov registreert MS-STAT fase 2 met percentage change in whole brain volume als primaire uitkomst."
+    },
+    {
+      "url": "https://clinicaltrials.gov/study/NCT03387670",
+      "type": "trial_registry",
+      "date_checked": "2026-07-13",
+      "claim": "ClinicalTrials.gov registreert MS-STAT2 als studie bij SPMS."
+    }
+  ],
+  "last_reviewed": "2026-07-13",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen behandeladvies. Repurposing is geen doe-het-zelfadvies."
+}
+

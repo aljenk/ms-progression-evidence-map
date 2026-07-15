@@ -1,0 +1,31 @@
+id,title,category,subcategory,ms_context,primary_outcomes,evidence_level,review_status,first_source,next_action
+btk-tolebrutinib-hercules,Tolebrutinib HERCULES bij non-relapsing SPMS,intervention,BTK inhibitor,nrSPMS;progressive MS,CDP;EDSS;safety,A,source_checked,https://pubmed.ncbi.nlm.nih.gov/40202696/,Extracteer effectmaat en veiligheidsdata uit publicatie
+btk-tolebrutinib-perseus,Tolebrutinib PERSEUS bij PPMS,trial,BTK inhibitor,PPMS,CDP;EDSS;safety,E,source_checked,https://clinicaltrials.gov/study/NCT04458051,Volg trialstatus en publicatie
+btk-target,BTK als target,target,immune signaling,progressive MS;PIRA,mechanism;structure,C,draft,https://www.uniprot.org/uniprotkb/Q06187/entry,Maak targetfiche met UniProt en structuurlaag
+ocrelizumab-ppms,Ocrelizumab bij PPMS,intervention,anti-CD20,PPMS,CDP;MRI;safety,A,source_checked,https://pubmed.ncbi.nlm.nih.gov/28002688/,ORATORIO veiligheidsdetails en richtlijncontext toevoegen
+rituximab-spms-ppms,Rituximab in progressieve MS,intervention,anti-CD20,SPMS;PPMS,CDP;MRI;safety,B,draft,,Systematische review zoeken
+cd20-target,CD20 als B-cel target,target,B-cell biology,progressive MS,mechanism;clinical response,C,draft,,Targetfiche maken
+cd40l-target,CD40L/CD40 route,target,costimulation,progressive MS;immune activation,mechanism;safety,C,draft,,Bronnen en veiligheidscontext toevoegen
+baff-april,BAFF/APRIL route,target,B-cell survival,progressive MS,mechanism;biomarker,C,draft,,Target en interventiecontext scheiden
+complement-c1q,C1q en complementroute,target,innate immunity;complement,progressive MS;neurodegeneration,mechanism;biomarker,C,draft,,Bronnen toevoegen
+microglia-activation,Microglia-activatie,mechanism,innate immunity,progressive MS;PIRA,biomarker;mechanism,C,draft,,Koppel aan PET en CSF biomarkers
+chronic-active-lesions,Chronic active lesions,biomarker,MRI pathology,progressive MS;PIRA,MRI;CDP,C,draft,,Bronnen en definities toevoegen
+paramagnetic-rim-lesions,Paramagnetic rim lesions,biomarker,MRI,progressive MS;PIRA,MRI;CDP,C,source_checked,https://pubmed.ncbi.nlm.nih.gov/42420786/,MRI-protocol en standaardisatie toevoegen
+slowly-expanding-lesions,Slowly expanding lesions,biomarker,MRI,progressive MS;PIRA,MRI;brain volume,C,source_checked,https://pubmed.ncbi.nlm.nih.gov/42292345/,Detectiemethoden en klinische beperkingen toevoegen
+nfl-serum,Serum NfL,biomarker,fluid biomarker,RRMS;SPMS;PPMS;PIRA,NfL;CDP;MRI,B,source_checked,https://pubmed.ncbi.nlm.nih.gov/42322442/,Drempels platformcorrectie en leeftijdscorrectie beschrijven
+gfap-serum,Serum GFAP,biomarker,fluid biomarker,progressive MS;PIRA,GFAP;CDP;brain volume,B,source_checked,https://pubmed.ncbi.nlm.nih.gov/42322442/,Rol naast NfL en progressiespecificiteit aanscherpen
+brain-volume-loss,Hersenvolumeverlies,biomarker,MRI,progressive MS;PIRA,brain volume;CDP,B,draft,,Meetbias en klinische relevantie beschrijven
+cognition-sdmt,SDMT en cognitie,biomarker,functional outcome,progressive MS;PIRA,cognition;quality of life,B,draft,,Koppelen aan patientrelevantie
+hand-function-9hpt,9-Hole Peg Test,biomarker,functional outcome,progressive MS;PIRA,hand function;CDP,B,draft,,Rol in composite outcomes beschrijven
+walking-t25fw,Timed 25-Foot Walk,biomarker,functional outcome,progressive MS;PIRA,walking;CDP,B,draft,,Rol in EDSS-plus uitwerken
+remyelination-clemastine,Clemastine en remyelinisatie,intervention,remyelination,MS;optic neuropathy,remyelination;visual evoked potentials,B,draft,,Bronnen en generaliseerbaarheid checken
+remyelination-opicinumab,Opicinumab en remyelinisatie,intervention,anti-LINGO-1,MS;remyelination,remyelination;disability,B,draft,,Trialresultaten samenvatten
+remyelination-targets,Remyelinisatie-targets,target,repair biology,progressive MS;remyelination,mechanism;repair,C,draft,,Maak targetcluster
+neuroprotection-ibudilast,Ibudilast bij progressieve MS,intervention,neuroprotection,progressive MS,brain volume;CDP;safety,B,source_checked,https://pubmed.ncbi.nlm.nih.gov/30157388/,Fase 3-vervolgstatus en veiligheidsdetails toevoegen
+simvastatin-spms,Simvastatin bij SPMS,intervention,repurposing;neuroprotection,SPMS,brain volume;EDSS;safety,A,source_checked,https://pubmed.ncbi.nlm.nih.gov/41045938/,Fase 2 positief en fase 3 negatief helder visualiseren
+metformin-remyelination,Metformin als remyelinisatiehypothese,intervention,repurposing;repair,progressive MS;preclinical,mechanism;remyelination,C,draft,,Duidelijk labelen als hypothese waar nodig
+ebv-ebna1,EBV EBNA1 target,target,viral immunology,MS risk;progression unknown,mechanism;structure,D,draft,,Scheiding risico versus progressie bewaken
+hla-dr15-antigen,HLA-DR15 en antigeenpresentatie,target,genetic risk;immune mechanism,MS risk;progression unknown,mechanism;structure,D,draft,,Alleen opnemen als contextlaag
+alpha-fold-layer,AlphaFold structurele hypotheselaag,structure,computational biology,targets;mechanisms,structure;hypothesis,D,source_checked,https://alphafold.ebi.ac.uk/,Template toepassen op eerste target BTK
+alpha-missense-layer,AlphaMissense variantlaag,structure,variant prediction,targets;variants,variant;hypothesis,D,source_checked,https://alphamissense.hegelab.org/,Waarschuwing over geen ACMG/AMP-classificatie opnemen
+patient-reported-outcomes,Patientgerapporteerde uitkomsten,biomarker;outcome,patient relevance,progressive MS;PIRA,quality of life;function,B,draft,,Kernset voor patiententaal bepalen

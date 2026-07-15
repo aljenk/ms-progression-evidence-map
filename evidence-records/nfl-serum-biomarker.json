@@ -1,0 +1,52 @@
+{
+  "id": "nfl-serum",
+  "title": "Serum NfL als MS-progressiebiomarker",
+  "category": "biomarker",
+  "subcategory": "fluid biomarker",
+  "ms_context": [
+    "RRMS",
+    "SPMS",
+    "PPMS",
+    "PIRA",
+    "progressive MS"
+  ],
+  "mechanism_summary": "Neurofilament light chain is een marker van axonale schade. Verhoogde waarden kunnen neuro-axonale schade weerspiegelen, maar zijn niet MS-specifiek.",
+  "patient_summary": "NfL is een bloedmarker die iets kan zeggen over zenuwschade en ziekteactiviteit op groepsniveau. Het is geen losse diagnose- of behandelbeslissing.",
+  "clinical_summary": "NfL wordt onderzocht als prognostische en monitoringbiomarker bij MS. De waarde hangt af van leeftijd, meetplatform, comorbiditeit, timing en klinische context.",
+  "research_summary": "Een recente systematische review en meta-analyse beoordeelt NfL en GFAP voor prognose over MS-subtypen en ziekteactiviteitspatronen. NfL lijkt sterker gekoppeld aan ontstekingsactiviteit, maar er is ook signaal voor neurodegeneratieve progressie.",
+  "outcomes": [
+    "NfL",
+    "relapse activity",
+    "EDSS",
+    "disability progression",
+    "PIRA hypothesis"
+  ],
+  "evidence_level": "B",
+  "evidence_label": "Systematische review/meta-analyse en klinische biomarkerreview ondersteunen prognostische waarde, maar toepassing vereist context en standaardisatie.",
+  "trial_status": "not_applicable",
+  "result_summary": "PubMed abstract van de 2026 systematische review/meta-analyse vermeldt dertien studies met 4,016 personen en rapporteert dat NfL als continue maat geassocieerd was met verhoogd risico op adverse events, inclusief statistisch significant signaal voor neurodegenerative progression.",
+  "safety_notes": "Niet van toepassing als biomarker, maar interpretatierisico is hoog: NfL is niet MS-specifiek en mag niet als zelfstandig behandeladvies worden gebruikt.",
+  "open_questions": [
+    "Welke leeftijds- en platformcorrecties moeten in de publieke kaart worden genoemd?",
+    "Hoe scheiden we inflammatoire ziekteactiviteit van progressie zonder relapses?",
+    "Welke drempels zijn klinisch bruikbaar en welke alleen researchcontext?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42322442/",
+      "type": "systematic_review_meta_analysis",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed abstract beschrijft een systematische review en meta-analyse over prognostische waarde van NfL en GFAP in MS-subtypen en ziekteactiviteitspatronen."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42422214/",
+      "type": "clinical_review",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed metadata beschrijft een 2026 review over serum NfL in MS van biologisch signaal naar klinisch geinformeerde besluitvorming."
+    }
+  ],
+  "last_reviewed": "2026-07-13",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen medisch advies. Biomarkers moeten altijd in klinische context worden geinterpreteerd."
+}
+
