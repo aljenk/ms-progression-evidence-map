@@ -37,6 +37,7 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 - `scripts/validate_evidence_map.py`: lokale validator voor CSV, JSON, index en guardrails.
 - `CHANGELOG.md`: wijzigingen per release of werkbatch.
 - `source-check-batch-001-v0.1.md`: eerste primaire bronkandidaten voor MS Research-discovery items.
+- `source-extraction-batch-001-v0.1.md`: abstract-extractie voor batch 001 en draft-promotie van vier items.
 
 ## Eerste uitgewerkte records
 
@@ -56,6 +57,8 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 MS Research is toegevoegd als Nederlandse source-discovery en stakeholderbron. De eerste 12 relevante projecten staan in `seed-items-v0.1.csv` met reviewstatus `needs_primary_source_check`. Deze items mogen pas inhoudelijke evidence-claims krijgen na controle van primaire bronnen zoals PubMed, trialregisters, DOI-pagina's, centrumspagina's of publicaties van de betrokken onderzoeksgroepen.
 
 De eerste broncheckbatch staat in `source-check-batch-001-v0.1.md` en `data/source-check-queue.csv`.
+
+De eerste abstract-extractie staat in `source-extraction-batch-001-v0.1.md`. Vier MS Research-items zijn op basis daarvan naar `draft` gezet, nog niet naar `source_checked`.
 
 ## GitHub-moment
 
