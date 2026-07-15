@@ -30,6 +30,7 @@ Een batch mag publiek als:
 - elke A- of B-claim terugleidbaar is naar een klinische bron of trialregister.
 - elke D-claim zichtbaar als computationele hypothese is gelabeld.
 - changelog en reviewdatum zichtbaar zijn.
+- de Pages-site `expert_review_requested` expliciet als pre-review toont.
 
 ## Stopcriteria
 

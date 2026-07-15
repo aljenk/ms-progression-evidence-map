@@ -33,8 +33,10 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 - `data/index.csv`: botvriendelijke index voor records en prioritaire discovery-items.
 - `data/source-check-queue.csv`: uitvoerbare queue met primaire bronkandidaten per batch.
 - `data/expert-review-queue.csv`: queue met exacte expertreviewvragen voor brongecheckte records.
+- `index.html` en `site/`: GitHub Pages-dashboard voor de evidence records.
 - `.github/ISSUE_TEMPLATE/`: issue-templates voor evidence-intake, source-check en expertreview.
 - `.github/workflows/evidence-map-checks.yml`: automatische validatie op push en pull request.
+- `.github/workflows/pages.yml`: GitHub Pages-deploy van de statische evidence map.
 - `scripts/validate_evidence_map.py`: lokale validator voor CSV, JSON, index en guardrails.
 - `CHANGELOG.md`: wijzigingen per release of werkbatch.
 - `source-check-batch-001-v0.1.md`: eerste primaire bronkandidaten voor MS Research-discovery items.
@@ -86,6 +88,8 @@ Deze structuur doet nog geen automatische medische beoordeling. Zij bewaakt alle
 ## GitHub Pages voorbereiding
 
 Een publieke GitHub Pages-laag kan nu technisch worden voorbereid op basis van `data/index.csv`, `data/source-check-queue.csv`, `data/expert-review-queue.csv` en `evidence-records/*.json`. De site moet reviewstatussen zichtbaar tonen. Items met `expert_review_requested` mogen als pre-review researchkaart zichtbaar zijn, maar niet als gepubliceerde evidenceclaim.
+
+De eerste Pages-versie staat in `index.html` en `site/`. Het dashboard laadt `data/index.csv`, `data/expert-review-queue.csv` en de JSON-records direct vanuit de repository. De workflow `.github/workflows/pages.yml` valideert de evidence map en publiceert daarna de statische site via GitHub Pages.
 
 ## Centrale lijn
 
