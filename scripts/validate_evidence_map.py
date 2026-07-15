@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SEED = ROOT / "seed-items-v0.1.csv"
 RECORD_DIR = ROOT / "evidence-records"
 INDEX = ROOT / "data" / "index.csv"
+SOURCE_QUEUE = ROOT / "data" / "source-check-queue.csv"
 
 REQUIRED_JSON_FIELDS = {
     "id",
@@ -38,6 +39,13 @@ VALID_REVIEW_STATUS = {
     "expert_review_requested",
     "expert_reviewed",
     "published",
+}
+
+VALID_SOURCE_QUEUE_STATUS = {
+    "candidate_primary_source",
+    "extraction_started",
+    "extracted",
+    "rejected",
 }
 
 
@@ -127,6 +135,52 @@ def validate_index(seed_rows: list[dict[str, str]]) -> None:
             fail(f"index id not found in seed file: {item_id}")
 
 
+def validate_source_queue(seed_rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    if not SOURCE_QUEUE.exists():
+        fail(f"missing {SOURCE_QUEUE.relative_to(ROOT)}")
+
+    with SOURCE_QUEUE.open(newline="", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        rows = list(reader)
+
+    required = {
+        "batch_id",
+        "item_id",
+        "source_url",
+        "source_type",
+        "pmid",
+        "doi",
+        "title",
+        "source_status",
+        "claim_to_test",
+        "next_action",
+    }
+    missing = required - set(reader.fieldnames or [])
+    if missing:
+        fail(f"source queue missing columns: {sorted(missing)}")
+
+    seed_ids = {row["id"] for row in seed_rows}
+    seen: set[tuple[str, str]] = set()
+    for row in rows:
+        item_id = row["item_id"].strip()
+        source_url = row["source_url"].strip()
+        if item_id not in seed_ids:
+            fail(f"source queue id not found in seed file: {item_id}")
+        if not source_url.startswith("https://"):
+            fail(f"source queue source_url is not https: {source_url}")
+        status = row["source_status"].strip()
+        if status not in VALID_SOURCE_QUEUE_STATUS:
+            fail(f"{item_id} has invalid source_status: {status}")
+        if not row["claim_to_test"].strip():
+            fail(f"{item_id} has empty claim_to_test")
+        key = (item_id, source_url)
+        if key in seen:
+            fail(f"duplicate source queue entry: {item_id} {source_url}")
+        seen.add(key)
+
+    return rows
+
+
 def validate_text() -> None:
     for path in ROOT.rglob("*"):
         if ".git" in path.parts or not path.is_file():
@@ -141,6 +195,7 @@ def main() -> None:
     seed_rows = validate_seed()
     records = validate_records()
     validate_index(seed_rows)
+    source_queue_rows = validate_source_queue(seed_rows)
     validate_text()
     msresearch_rows = sum(1 for row in seed_rows if row["id"].startswith("msresearch-"))
     source_checked = sum(1 for row in seed_rows if row["review_status"] == "source_checked")
@@ -149,6 +204,7 @@ def main() -> None:
     print(f"json_records={len(records)}")
     print(f"source_checked_seed_rows={source_checked}")
     print(f"msresearch_seed_rows={msresearch_rows}")
+    print(f"source_queue_rows={len(source_queue_rows)}")
 
 
 if __name__ == "__main__":

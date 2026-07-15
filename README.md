@@ -31,10 +31,12 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 - `msresearch-source-discovery-v0.1.md`: MS Research als Nederlandse source-discovery en stakeholderbron.
 - `bot-operating-model-v0.1.md`: live botworkflow met intake, source-check, expertreview en publicatiegate.
 - `data/index.csv`: botvriendelijke index voor records en prioritaire discovery-items.
+- `data/source-check-queue.csv`: uitvoerbare queue met primaire bronkandidaten per batch.
 - `.github/ISSUE_TEMPLATE/`: issue-templates voor evidence-intake, source-check en expertreview.
 - `.github/workflows/evidence-map-checks.yml`: automatische validatie op push en pull request.
 - `scripts/validate_evidence_map.py`: lokale validator voor CSV, JSON, index en guardrails.
 - `CHANGELOG.md`: wijzigingen per release of werkbatch.
+- `source-check-batch-001-v0.1.md`: eerste primaire bronkandidaten voor MS Research-discovery items.
 
 ## Eerste uitgewerkte records
 
@@ -52,6 +54,8 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 ## Source discovery
 
 MS Research is toegevoegd als Nederlandse source-discovery en stakeholderbron. De eerste 12 relevante projecten staan in `seed-items-v0.1.csv` met reviewstatus `needs_primary_source_check`. Deze items mogen pas inhoudelijke evidence-claims krijgen na controle van primaire bronnen zoals PubMed, trialregisters, DOI-pagina's, centrumspagina's of publicaties van de betrokken onderzoeksgroepen.
+
+De eerste broncheckbatch staat in `source-check-batch-001-v0.1.md` en `data/source-check-queue.csv`.
 
 ## GitHub-moment
 

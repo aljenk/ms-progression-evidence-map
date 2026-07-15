@@ -16,6 +16,7 @@ Deze botstructuur maakt van de evidence map een reproduceerbare workflow. Bots e
 - `.github/labels.yml`: labelset voor GitHub-triage.
 - `scripts/validate_evidence_map.py`: lokale en CI-validatie.
 - `data/index.csv`: botvriendelijke index van records en prioritaire discovery-items.
+- `data/source-check-queue.csv`: queue met primaire bronkandidaten en exact te testen claims.
 
 ## Workflow
 
@@ -48,5 +49,6 @@ Deze botstructuur maakt van de evidence map een reproduceerbare workflow. Bots e
 
 - Dagelijkse triage: nieuwe issues labelen en ontbrekende velden terugvragen.
 - Source-check batch: 3 tot 5 `needs_primary_source_check` items per ronde naar primaire bron zoeken.
+- Source-check queue: kandidaatbronnen toevoegen aan `data/source-check-queue.csv`, daarna pas extraheren.
 - Trial monitor: ClinicalTrials.gov-items opnieuw controleren bij statuswijziging.
 - Publication gate: `python scripts/validate_evidence_map.py` uitvoeren voor elke merge.
