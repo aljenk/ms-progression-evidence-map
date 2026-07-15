@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Medical disclaimer
+    url: https://github.com/aljenk/ms-progression-evidence-map/blob/main/MEDICAL-DISCLAIMER.md
+    about: Read this before opening medical or treatment-related questions.

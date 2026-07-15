@@ -1,0 +1,45 @@
+name: Expert review
+description: Ask for medical or scientific review of a claim or item.
+title: "Expert review: "
+labels:
+  - expert-review
+body:
+  - type: input
+    id: item_id
+    attributes:
+      label: Evidence item ID
+      placeholder: nfl-serum
+    validations:
+      required: true
+  - type: textarea
+    id: review_question
+    attributes:
+      label: Review question
+      placeholder: Is this progressieclaim correctly limited to the studied population?
+    validations:
+      required: true
+  - type: textarea
+    id: current_wording
+    attributes:
+      label: Current wording
+      description: Paste the patient, clinical or research text to review.
+    validations:
+      required: true
+  - type: textarea
+    id: source_basis
+    attributes:
+      label: Source basis
+      description: List the sources already checked.
+      placeholder: PubMed, trial register, DOI, database links.
+    validations:
+      required: true
+  - type: dropdown
+    id: risk_level
+    attributes:
+      label: Risk if phrased too strongly
+      options:
+        - high
+        - medium
+        - low
+    validations:
+      required: true

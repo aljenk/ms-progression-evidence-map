@@ -1,7 +1,17 @@
 # Botontwerp v0.1
 
 Datum: 2026-07-13
-Status: concept
+Status: v0.2 gekoppeld aan live GitHub-structuur
+
+## Live GitHub-onderdelen
+
+- `.github/ISSUE_TEMPLATE/evidence-item.yml`: intake voor nieuwe evidence-items.
+- `.github/ISSUE_TEMPLATE/source-check.yml`: broncheck met exacte claim.
+- `.github/ISSUE_TEMPLATE/expert-review.yml`: medische of wetenschappelijke reviewvraag.
+- `.github/workflows/evidence-map-checks.yml`: automatische validatie op push en pull request.
+- `.github/labels.yml`: triagelabels voor intake, source-check, expertreview, clinical, biomarker, structure, safety en publication-ready.
+- `scripts/validate_evidence_map.py`: lokale en CI-validator.
+- `data/index.csv`: compacte botindex.
 
 ## Rollen
 
@@ -122,4 +132,3 @@ Output:
 - Bots moeten bij structurele voorspellingen altijd `computational hypothesis` tonen.
 - Bots moeten bronlinks tonen bij inhoudelijke claims.
 - Bots mogen geen publicatie-ready status geven zonder reviewstatus en laatste-reviewdatum.
-

@@ -1,0 +1,50 @@
+name: Source check
+description: Verify a source and the exact claim it supports.
+title: "Source check: "
+labels:
+  - source-check
+body:
+  - type: input
+    id: item_id
+    attributes:
+      label: Evidence item ID
+      placeholder: btk-tolebrutinib-hercules
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Source URL
+      placeholder: https://pubmed.ncbi.nlm.nih.gov/
+    validations:
+      required: true
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: Source type
+      options:
+        - peer_reviewed_publication
+        - trial_registry
+        - guideline
+        - database
+        - university_or_center_page
+        - funder_project_page
+        - preprint_or_abstract
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: exact_claim
+    attributes:
+      label: Exact claim supported by this source
+      description: Keep this narrower than the source.
+      placeholder: The source supports only...
+    validations:
+      required: true
+  - type: textarea
+    id: exclusions
+    attributes:
+      label: Claims not supported
+      placeholder: This source does not support treatment choice, individual prognosis, or efficacy outside the studied population.
+    validations:
+      required: true

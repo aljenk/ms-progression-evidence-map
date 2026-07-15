@@ -1,0 +1,58 @@
+name: Evidence item intake
+description: Add or triage a possible evidence-map item.
+title: "Evidence item: "
+labels:
+  - intake
+  - needs-source-check
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for new interventions, targets, biomarkers, mechanisms, trials or structure items.
+        Do not add treatment recommendations or personal medical cases.
+  - type: input
+    id: proposed_id
+    attributes:
+      label: Proposed stable ID
+      description: Lowercase, short, hyphenated, stable.
+      placeholder: example-target-or-trial
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - intervention
+        - target
+        - biomarker
+        - trial
+        - mechanism
+        - structure
+        - safety
+        - question
+    validations:
+      required: true
+  - type: input
+    id: ms_context
+    attributes:
+      label: MS context
+      placeholder: progressive MS; PIRA; PPMS
+    validations:
+      required: true
+  - type: textarea
+    id: source_links
+    attributes:
+      label: Source links
+      description: Prefer PubMed, DOI, trial register, university or clinical center pages.
+      placeholder: One URL per line.
+    validations:
+      required: true
+  - type: textarea
+    id: claim_limit
+    attributes:
+      label: Claim limit
+      description: What this item cannot claim yet.
+      placeholder: This does not show clinical efficacy because...
+    validations:
+      required: true

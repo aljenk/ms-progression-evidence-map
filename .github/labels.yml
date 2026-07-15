@@ -1,0 +1,27 @@
+- name: intake
+  color: "ededed"
+  description: New item that needs triage.
+- name: needs-source-check
+  color: "fbca04"
+  description: Needs primary source verification.
+- name: source-check
+  color: "0e8a16"
+  description: Source and exact claim verification.
+- name: expert-review
+  color: "1d76db"
+  description: Needs medical or scientific expert review.
+- name: clinical
+  color: "0052cc"
+  description: Clinical evidence or clinical outcome.
+- name: biomarker
+  color: "5319e7"
+  description: Biomarker, imaging or fluid marker item.
+- name: structure
+  color: "c2e0c6"
+  description: Structure, target or computational hypothesis layer.
+- name: safety
+  color: "d93f0b"
+  description: Safety signal or risk wording.
+- name: publication-ready
+  color: "006b75"
+  description: Passed source and review checks for publication.

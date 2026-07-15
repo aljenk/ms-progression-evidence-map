@@ -29,6 +29,12 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 - `publication-readiness-checklist-v0.1.md`: checklist voor publicatie en stopcriteria.
 - `github-environment-decision-v0.1.md`: wanneer GitHub nodig wordt en minimale repo-opzet.
 - `msresearch-source-discovery-v0.1.md`: MS Research als Nederlandse source-discovery en stakeholderbron.
+- `bot-operating-model-v0.1.md`: live botworkflow met intake, source-check, expertreview en publicatiegate.
+- `data/index.csv`: botvriendelijke index voor records en prioritaire discovery-items.
+- `.github/ISSUE_TEMPLATE/`: issue-templates voor evidence-intake, source-check en expertreview.
+- `.github/workflows/evidence-map-checks.yml`: automatische validatie op push en pull request.
+- `scripts/validate_evidence_map.py`: lokale validator voor CSV, JSON, index en guardrails.
+- `CHANGELOG.md`: wijzigingen per release of werkbatch.
 
 ## Eerste uitgewerkte records
 
@@ -50,6 +56,19 @@ MS Research is toegevoegd als Nederlandse source-discovery en stakeholderbron. D
 ## GitHub-moment
 
 GitHub is nu het logische volgende infrastructuurpunt. De eerste 10 brongecheckte records zijn gehaald. Richt GitHub in voordat de neuroloog-review, issue-tracking of publieke website wordt voorbereid.
+
+## Botstructuur live
+
+De eerste botstructuur is ingericht in GitHub:
+
+- intake loopt via issue-template `Evidence item intake`
+- broncontrole loopt via issue-template `Source check`
+- medische of wetenschappelijke toetsing loopt via issue-template `Expert review`
+- elke push en pull request draait `scripts/validate_evidence_map.py`
+- `data/index.csv` geeft bots een compacte startindex
+- `.github/labels.yml` legt de triagelabels vast
+
+Deze structuur doet nog geen automatische medische beoordeling. Zij bewaakt alleen workflow, bronstatus, claimbeperking en publicatiegate.
 
 ## Centrale lijn
 
