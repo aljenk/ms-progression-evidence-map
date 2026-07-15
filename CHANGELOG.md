@@ -11,3 +11,4 @@
 - Expertreview batch 001 toegevoegd met vier reviewvragen, `data/expert-review-queue.csv` en status `expert_review_requested` voor de vier MS Research-records.
 - Eerste GitHub Pages-dashboard toegevoegd met filters, recorddetail, bronlinks, expertreviewstatus en Pages-deploy workflow.
 - Pages-publicatie afgestemd op branch-deploy: `main` valideert en publiceert automatisch naar `gh-pages`, met Pages ingesteld op `gh-pages` `/root`.
+- Intro en statusuitleg toegevoegd aan de GitHub Pages-site.

@@ -89,7 +89,7 @@ Deze structuur doet nog geen automatische medische beoordeling. Zij bewaakt alle
 
 Een publieke GitHub Pages-laag kan nu technisch worden voorbereid op basis van `data/index.csv`, `data/source-check-queue.csv`, `data/expert-review-queue.csv` en `evidence-records/*.json`. De site moet reviewstatussen zichtbaar tonen. Items met `expert_review_requested` mogen als pre-review researchkaart zichtbaar zijn, maar niet als gepubliceerde evidenceclaim.
 
-De eerste Pages-versie staat in `index.html` en `site/`. Het dashboard laadt `data/index.csv`, `data/expert-review-queue.csv` en de JSON-records direct vanuit de repository. De workflow `.github/workflows/pages.yml` valideert de evidence map en publiceert daarna automatisch de `gh-pages` branch.
+De eerste Pages-versie staat in `index.html` en `site/`. Het dashboard bevat een korte intro met statusuitleg, laadt `data/index.csv`, `data/expert-review-queue.csv` en de JSON-records direct vanuit de repository. De workflow `.github/workflows/pages.yml` valideert de evidence map en publiceert daarna automatisch de `gh-pages` branch.
 
 Aanbevolen GitHub Pages-instelling:
 
