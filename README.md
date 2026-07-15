@@ -36,7 +36,7 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 - `index.html` en `site/`: GitHub Pages-dashboard voor de evidence records.
 - `.github/ISSUE_TEMPLATE/`: issue-templates voor evidence-intake, source-check en expertreview.
 - `.github/workflows/evidence-map-checks.yml`: automatische validatie op push en pull request.
-- `.github/workflows/pages.yml`: GitHub Pages-deploy van de statische evidence map.
+- `.github/workflows/pages.yml`: valideert `main` en publiceert daarna automatisch de `gh-pages` branch.
 - `scripts/validate_evidence_map.py`: lokale validator voor CSV, JSON, index en guardrails.
 - `CHANGELOG.md`: wijzigingen per release of werkbatch.
 - `source-check-batch-001-v0.1.md`: eerste primaire bronkandidaten voor MS Research-discovery items.
@@ -89,7 +89,15 @@ Deze structuur doet nog geen automatische medische beoordeling. Zij bewaakt alle
 
 Een publieke GitHub Pages-laag kan nu technisch worden voorbereid op basis van `data/index.csv`, `data/source-check-queue.csv`, `data/expert-review-queue.csv` en `evidence-records/*.json`. De site moet reviewstatussen zichtbaar tonen. Items met `expert_review_requested` mogen als pre-review researchkaart zichtbaar zijn, maar niet als gepubliceerde evidenceclaim.
 
-De eerste Pages-versie staat in `index.html` en `site/`. Het dashboard laadt `data/index.csv`, `data/expert-review-queue.csv` en de JSON-records direct vanuit de repository. De workflow `.github/workflows/pages.yml` valideert de evidence map en publiceert daarna de statische site via GitHub Pages.
+De eerste Pages-versie staat in `index.html` en `site/`. Het dashboard laadt `data/index.csv`, `data/expert-review-queue.csv` en de JSON-records direct vanuit de repository. De workflow `.github/workflows/pages.yml` valideert de evidence map en publiceert daarna automatisch de `gh-pages` branch.
+
+Aanbevolen GitHub Pages-instelling:
+
+- Source: `Deploy from a branch`
+- Branch: `gh-pages`
+- Folder: `/root`
+
+Deze instelling houdt publicatie simpel. De Action blijft nuttig als automatische validatie- en publicatiestap vanaf `main`.
 
 ## Centrale lijn
 
