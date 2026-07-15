@@ -52,6 +52,16 @@ Per biomarker:
    - uitkomstmaat
    - reviewstatus
 
+## Batch 4: MS Research source-discovery
+
+MS Research is geschikt als Nederlandse discovery- en stakeholderbron, niet als primaire claimbron. De 12 toegevoegde seed-items krijgen daarom eerst `needs_primary_source_check`.
+
+1. Zoek per MS Research-item de primaire publicatie, DOI, trialregistratie of centrumspagina.
+2. Verwijder of downgrade items zonder primaire bron.
+3. Koppel overlap aan bestaande clusters: PIRA, PRL, SEL, remyelinisatie, myeline, B-cellen en OCT.
+4. Maak pas JSON-records nadat de primaire bron direct is gecontroleerd.
+5. Houd een aparte stakeholdernotitie bij voor mogelijke Nederlandse expertreview.
+
 ## GitHub-beslispunt
 
 GitHub is nu nodig voor de volgende fase: de eerste 10 `source_checked` records zijn gehaald. Maak de repo aan voordat de externe neuroloog-review, issue-tracking of publieke website start.

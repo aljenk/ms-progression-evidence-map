@@ -28,6 +28,7 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 - `next-steps-backlog-v0.1.md`: uitvoerbare backlog voor de volgende werkronde.
 - `publication-readiness-checklist-v0.1.md`: checklist voor publicatie en stopcriteria.
 - `github-environment-decision-v0.1.md`: wanneer GitHub nodig wordt en minimale repo-opzet.
+- `msresearch-source-discovery-v0.1.md`: MS Research als Nederlandse source-discovery en stakeholderbron.
 
 ## Eerste uitgewerkte records
 
@@ -41,6 +42,10 @@ Deze repository bevat researchinformatie. De inhoud is geen medisch advies, geen
 - `evidence-records/gfap-serum-biomarker.json`
 - `evidence-records/paramagnetic-rim-lesions.json`
 - `evidence-records/slowly-expanding-lesions.json`
+
+## Source discovery
+
+MS Research is toegevoegd als Nederlandse source-discovery en stakeholderbron. De eerste 12 relevante projecten staan in `seed-items-v0.1.csv` met reviewstatus `needs_primary_source_check`. Deze items mogen pas inhoudelijke evidence-claims krijgen na controle van primaire bronnen zoals PubMed, trialregisters, DOI-pagina's, centrumspagina's of publicaties van de betrokken onderzoeksgroepen.
 
 ## GitHub-moment
 
