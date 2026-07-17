@@ -414,7 +414,8 @@ select {
 .summary-block h4,
 .source-list h4,
 .review-box h4,
-.question-list h4 {
+.question-list h4,
+.publication-gate h4 {
   margin: 0 0 8px;
   font-size: 0.84rem;
   color: var(--muted);
@@ -423,18 +424,34 @@ select {
 }
 
 .summary-block p,
-.review-box p {
+.review-box p,
+.publication-gate p {
   margin-bottom: 0;
 }
 
 .source-list,
 .review-box,
-.question-list {
+.question-list,
+.publication-gate {
   margin-top: 16px;
   padding: 13px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
+}
+
+.publication-gate {
+  margin-top: 0;
+  background: #fbfcfa;
+}
+
+.publication-gate.pre-review {
+  border-color: rgba(166, 111, 33, 0.38);
+  background: #fff8ec;
+}
+
+.publication-gate ul {
+  margin-top: 10px;
 }
 
 .source-item {

@@ -14,6 +14,18 @@ const statusLabels = {
   published: "Gepubliceerd",
 };
 
+const statusExplanations = {
+  draft: "Werkversie. Gebruik dit alleen als intern onderzoeksspoor.",
+  needs_primary_source_check:
+    "Discovery-item. Primaire bronnen en claimgrenzen moeten nog worden gecontroleerd.",
+  source_checked:
+    "Bron en kernclaim zijn gecontroleerd, maar dit is nog geen gepubliceerde claim.",
+  expert_review_requested:
+    "Pre-review. Een domeinexpert moet claimgrens, terminologie of interpretatie nog toetsen.",
+  expert_reviewed: "Expertfeedback is verwerkt. Controleer nog steeds de itemcontext.",
+  published: "Voldoet aan de publicatiecriteria van deze evidence map.",
+};
+
 const checkedStatuses = new Set([
   "source_checked",
   "expert_review_requested",
@@ -283,6 +295,46 @@ function renderReview(record) {
   return wrap;
 }
 
+function renderPublicationGate(record) {
+  const review = state.reviews.find((item) => item.item_id === record.id);
+  const isPreReview = record.review_status === "expert_review_requested";
+  const isPublished = record.review_status === "published";
+  const wrap = document.createElement("section");
+  wrap.className = `publication-gate ${isPreReview ? "pre-review" : ""}`;
+
+  const heading = document.createElement("h4");
+  heading.textContent = isPublished ? "Publicatiestatus" : "Publicatiegate";
+
+  const summary = document.createElement("p");
+  summary.textContent =
+    statusExplanations[record.review_status] ||
+    "Reviewstatus is bekend, maar heeft nog geen aparte toelichting.";
+
+  const checks = document.createElement("ul");
+  const items = [
+    record.medical_disclaimer || "Researchinformatie, geen medisch advies.",
+    record.evidence_label
+      ? `Claimgrens: ${record.evidence_label}`
+      : "Claimgrens ontbreekt nog in dit record.",
+  ];
+
+  if (isPreReview && review) {
+    items.push(`Open expertvraag: ${review.review_question}`);
+    items.push(`Volgende actie: ${review.next_action}`);
+  } else if (!isPublished) {
+    items.push(record.next_action ? `Volgende actie: ${record.next_action}` : "Volgende actie ontbreekt.");
+  }
+
+  for (const itemText of items) {
+    const item = document.createElement("li");
+    item.textContent = itemText;
+    checks.append(item);
+  }
+
+  wrap.append(heading, summary, checks);
+  return wrap;
+}
+
 function renderQuestions(record) {
   const wrap = document.createElement("section");
   wrap.className = "question-list";
@@ -345,7 +397,7 @@ function renderDetail(record) {
     textBlock("Onderzoek", record.research_summary || record.evidence_label),
   );
 
-  els.recordDetail.append(header, summaries);
+  els.recordDetail.append(header, renderPublicationGate(record), summaries);
   const review = renderReview(record);
   if (review) {
     els.recordDetail.append(review);
