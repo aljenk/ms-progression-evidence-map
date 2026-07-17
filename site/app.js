@@ -43,6 +43,8 @@ const els = {
   statusFilter: document.querySelector("#statusFilter"),
   categoryFilter: document.querySelector("#categoryFilter"),
   levelFilter: document.querySelector("#levelFilter"),
+  contextFilter: document.querySelector("#contextFilter"),
+  outcomeFilter: document.querySelector("#outcomeFilter"),
   resultCount: document.querySelector("#resultCount"),
   recordList: document.querySelector("#recordList"),
   recordDetail: document.querySelector("#recordDetail"),
@@ -154,6 +156,8 @@ function activeFilters() {
     status: els.statusFilter.value,
     category: els.categoryFilter.value,
     level: els.levelFilter.value,
+    context: els.contextFilter.value,
+    outcome: els.outcomeFilter.value,
   };
 }
 
@@ -161,11 +165,22 @@ function filteredRecords() {
   const filters = activeFilters();
   return state.records.filter((record) => {
     const categories = String(record.category || "").split(";");
+    const contexts = record.ms_context || [];
+    const outcomes = record.outcomes || [];
     const matchesSearch = !filters.search || recordSearchText(record).includes(filters.search);
     const matchesStatus = filters.status === "all" || record.review_status === filters.status;
     const matchesCategory = filters.category === "all" || categories.includes(filters.category);
     const matchesLevel = filters.level === "all" || record.evidence_level === filters.level;
-    return matchesSearch && matchesStatus && matchesCategory && matchesLevel;
+    const matchesContext = filters.context === "all" || contexts.includes(filters.context);
+    const matchesOutcome = filters.outcome === "all" || outcomes.includes(filters.outcome);
+    return (
+      matchesSearch &&
+      matchesStatus &&
+      matchesCategory &&
+      matchesLevel &&
+      matchesContext &&
+      matchesOutcome
+    );
   });
 }
 
@@ -411,6 +426,8 @@ function attachFilters() {
     els.statusFilter,
     els.categoryFilter,
     els.levelFilter,
+    els.contextFilter,
+    els.outcomeFilter,
   ]) {
     control.addEventListener("input", renderList);
   }
@@ -444,6 +461,8 @@ async function init() {
       uniqueValues(state.records, (record) => String(record.category || "").split(";")),
     );
     fillSelect(els.levelFilter, uniqueValues(state.records, (record) => [record.evidence_level]));
+    fillSelect(els.contextFilter, uniqueValues(state.records, (record) => record.ms_context || []));
+    fillSelect(els.outcomeFilter, uniqueValues(state.records, (record) => record.outcomes || []));
 
     renderMetrics();
     attachFilters();

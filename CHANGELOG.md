@@ -14,3 +14,4 @@
 - Intro en statusuitleg toegevoegd aan de GitHub Pages-site.
 - Uitleg van bewijsniveau A tot en met E toegevoegd aan de GitHub Pages-site.
 - Publicatiegate toegevoegd aan de recorddetailweergave, inclusief pre-review waarschuwing en open expertvraag voor `expert_review_requested` items.
+- Filters voor MS-context en uitkomstmaat toegevoegd aan het GitHub Pages-dashboard.
