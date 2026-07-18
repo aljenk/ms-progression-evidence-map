@@ -1,0 +1,58 @@
+{
+  "id": "neuroprotection-ibudilast-sprint-ms",
+  "title": "Ibudilast SPRINT-MS bij progressieve MS",
+  "category": "intervention",
+  "subcategory": "neuroprotection",
+  "ms_context": [
+    "PPMS",
+    "SPMS",
+    "progressive MS"
+  ],
+  "mechanism_summary": "Ibudilast remt meerdere cyclic nucleotide phosphodiesterases, macrophage migration inhibitory factor en TLR4. Het kan de bloed-hersenbarriere passeren en werd onderzocht als neuroprotectieve strategie.",
+  "patient_summary": "Ibudilast is onderzocht bij progressieve MS. Het belangrijkste gepubliceerde signaal gaat over langzamere hersenatrofie in een fase 2-studie, niet over bewezen klinische verbetering.",
+  "clinical_summary": "SPRINT-MS was een fase 2-studie bij primaire en secundaire progressieve MS. De primaire werkzaamheidsuitkomst was verandering in brain parenchymal fraction over 96 weken.",
+  "research_summary": "Deze entry hoort in de neuroprotectie-laag: interessant biomarker/atrofiesignaal, maar geen fase 3-progressiebewijs.",
+  "outcomes": [
+    "brain volume",
+    "MRI",
+    "safety",
+    "tissue damage markers"
+  ],
+  "evidence_level": "B",
+  "evidence_label": "Fase 2-publicatie met hersenatrofie als primaire uitkomst bij progressieve MS, geen fase 3 disability-progression bewijs.",
+  "trial_status": "completed_published",
+  "trial": {
+    "nct_id": "NCT01982942",
+    "trial_name": "SPRINT-MS",
+    "phase": "PHASE2",
+    "overall_status": "COMPLETED",
+    "enrollment_actual": 255,
+    "primary_outcome": "Covariate-adjusted mean rate of change in brain atrophy over 96 weeks measured by brain parenchymal fraction",
+    "primary_outcome_timeframe": "96 weeks"
+  },
+  "result_summary": "PubMed abstract vermeldt een verandering in brain parenchymal fraction van -0.0010 per jaar met ibudilast en -0.0019 per jaar met placebo, verschil 0.0009, 95% CI 0.00004 to 0.0017, P=0.04.",
+  "safety_notes": "PubMed abstract vermeldt gastro-intestinale symptomen, hoofdpijn en depressie als bijwerkingen die met ibudilast voorkwamen.",
+  "open_questions": [
+    "Is er fase 3-vervolgonderzoek met klinische progressie-uitkomsten?",
+    "Hoe moet hersenatrofie als biomarker worden uitgelegd zonder klinisch effect te overclaimen?",
+    "Welke veiligheidsinformatie is verplicht bij publieke communicatie?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30157388/",
+      "type": "peer_reviewed_publication",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed abstract beschrijft SPRINT-MS als fase 2-studie waarin ibudilast geassocieerd was met langzamere progressie van brain atrophy dan placebo, met meer gastro-intestinale bijwerkingen, hoofdpijn en depressie."
+    },
+    {
+      "url": "https://clinicaltrials.gov/study/NCT01982942",
+      "type": "trial_registry",
+      "date_checked": "2026-07-13",
+      "claim": "ClinicalTrials.gov registreert NCT01982942 als completed fase 2-studie bij PPMS en SPMS met brain parenchymal fraction en adverse events als primaire uitkomsten."
+    }
+  ],
+  "last_reviewed": "2026-07-13",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen behandeladvies. Biomarker- of MRI-effecten zijn niet automatisch hetzelfde als klinisch merkbare progressieremming."
+}
+

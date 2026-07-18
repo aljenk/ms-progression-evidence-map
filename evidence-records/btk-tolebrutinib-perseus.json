@@ -1,0 +1,63 @@
+{
+  "id": "btk-tolebrutinib-perseus",
+  "title": "Tolebrutinib PERSEUS bij PPMS",
+  "category": "trial",
+  "subcategory": "BTK inhibitor",
+  "ms_context": [
+    "PPMS",
+    "progressive MS"
+  ],
+  "mechanism_summary": "PERSEUS onderzoekt dezelfde BTK-remmer, tolebrutinib, maar in primary progressive MS. De mechanistische rationale raakt B-cel- en aangeboren immuunsignalering.",
+  "patient_summary": "PERSEUS is relevant omdat het primary progressive MS onderzoekt. Een trialregistratie alleen bewijst geen werkzaamheid.",
+  "clinical_summary": "ClinicalTrials.gov registreert PERSEUS als fase 3-studie bij PPMS met 6-maands composite confirmed disability progression als primaire uitkomst.",
+  "research_summary": "Deze entry moet in de trial-monitor blijven tot resultaten of een peer-reviewed publicatie apart zijn verwerkt.",
+  "outcomes": [
+    "composite CDP",
+    "EDSS",
+    "T25-FW",
+    "9-HPT",
+    "MRI",
+    "cognition",
+    "physical function",
+    "quality of life",
+    "safety"
+  ],
+  "evidence_level": "E",
+  "evidence_label": "Trialregistratie met progressie-uitkomst, maar zonder in deze map verwerkte werkzaamheidsresultaten.",
+  "trial_status": "completed_results_not_extracted",
+  "trial": {
+    "nct_id": "NCT04458051",
+    "trial_name": "PERSEUS",
+    "phase": "PHASE3",
+    "overall_status": "COMPLETED",
+    "start_date": "2020-08-13",
+    "completion_date": "2025-11-14",
+    "last_update_posted": "2026-01-07",
+    "enrollment_actual": 767,
+    "primary_outcome": "6-month composite confirmed disability progression",
+    "primary_outcome_components": [
+      "EDSS increase confirmed over at least 6 months",
+      ">=20% increase from baseline T25-FW",
+      ">=20% increase from baseline 9-HPT"
+    ],
+    "primary_outcome_timeframe": "Up to approximately 60 months"
+  },
+  "safety_notes": "Veiligheid en tolerantie zijn secundaire doelen in de trialregistratie. Geen veiligheidsclaim zonder resultatenextractie.",
+  "open_questions": [
+    "Zijn resultaten publiek beschikbaar en peer-reviewed?",
+    "Welke componenten van cCDP dragen het meest bij aan de uitkomst?",
+    "Hoe verhoudt PPMS-resultaat zich tot HERCULES bij nrSPMS?"
+  ],
+  "sources": [
+    {
+      "url": "https://clinicaltrials.gov/study/NCT04458051",
+      "type": "trial_registry",
+      "date_checked": "2026-07-13",
+      "claim": "ClinicalTrials.gov registreert PERSEUS als completed fase 3-studie bij PPMS met 6-maands cCDP als primaire uitkomst."
+    }
+  ],
+  "last_reviewed": "2026-07-13",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen behandeladvies. Een trialregistratie is geen bewijs voor werkzaamheid."
+}
+

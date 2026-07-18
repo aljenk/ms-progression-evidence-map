@@ -1,0 +1,63 @@
+{
+  "id": "btk-tolebrutinib-hercules",
+  "title": "Tolebrutinib HERCULES bij non-relapsing SPMS",
+  "category": "intervention",
+  "subcategory": "BTK inhibitor",
+  "ms_context": [
+    "nrSPMS",
+    "progressive MS"
+  ],
+  "mechanism_summary": "Tolebrutinib is een BTK-remmer. BTK is betrokken bij B-cel- en aangeboren immuunsignalering. De MS-rationale is dat remming van deze routes mogelijk relevant is voor progressieprocessen buiten klassieke relapse-activiteit.",
+  "patient_summary": "HERCULES onderzocht tolebrutinib bij mensen met non-relapsing secondary progressive MS. Dit is researchinformatie over een specifieke trialpopulatie, geen persoonlijk behandeladvies.",
+  "clinical_summary": "ClinicalTrials.gov registreert HERCULES als fase 3-studie bij non-relapsing SPMS met tijd tot 6-maands confirmed disability progression op EDSS als primaire uitkomst. De NEJM-publicatie uit 2025 is gekoppeld aan PubMed ID 40202696.",
+  "research_summary": "Deze entry is geschikt als eerste progressievoorbeeld omdat de primaire uitkomst expliciet disability progression meet, in plaats van alleen relapsefrequentie of MRI-activiteit.",
+  "outcomes": [
+    "CDP",
+    "EDSS",
+    "MRI",
+    "cognition",
+    "physical function",
+    "quality of life",
+    "safety"
+  ],
+  "evidence_level": "A",
+  "evidence_label": "Fase 3-publicatie en trialregistratie met progressie-uitkomst in non-relapsing SPMS.",
+  "trial_status": "completed_published",
+  "trial": {
+    "nct_id": "NCT04411641",
+    "trial_name": "HERCULES",
+    "phase": "PHASE3",
+    "overall_status": "COMPLETED",
+    "start_date": "2020-09-24",
+    "completion_date": "2024-08-29",
+    "last_update_posted": "2025-07-02",
+    "enrollment_actual": 1131,
+    "primary_outcome": "Time to onset of 6-month confirmed disability progression as assessed by EDSS",
+    "primary_outcome_timeframe": "Baseline up to approximately 47 months"
+  },
+  "safety_notes": "Veiligheid en tolerantie zijn secundaire doelen in de trialregistratie. Detailclaims over bijwerkingen moeten uit de publicatie of resultatenmodule apart worden geextraheerd.",
+  "open_questions": [
+    "Welke effectmaat en absolute risicoverschillen moeten in patiententaal worden getoond?",
+    "Welke veiligheidsignalen moeten prominent in de publieke kaart?",
+    "Welke formulering is medisch correct voor generaliseerbaarheid buiten nrSPMS?",
+    "Wat is de actuele regulatoire status per regio?"
+  ],
+  "sources": [
+    {
+      "url": "https://clinicaltrials.gov/study/NCT04411641",
+      "type": "trial_registry",
+      "date_checked": "2026-07-13",
+      "claim": "ClinicalTrials.gov registreert HERCULES als completed fase 3-studie bij non-relapsing SPMS met tijd tot 6-maands CDP op EDSS als primaire uitkomst."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40202696/",
+      "type": "peer_reviewed_publication_metadata",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed koppelt PMID 40202696 aan de NEJM-publicatie 'Tolebrutinib in Nonrelapsing Secondary Progressive Multiple Sclerosis' met publicatiedatum 2025 May 15 en DOI 10.1056/NEJMoa2415988."
+    }
+  ],
+  "last_reviewed": "2026-07-13",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen behandeladvies. Bespreek medische keuzes altijd met een bevoegde arts."
+}
+

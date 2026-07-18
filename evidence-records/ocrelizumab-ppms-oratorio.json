@@ -1,0 +1,60 @@
+{
+  "id": "ocrelizumab-ppms-oratorio",
+  "title": "Ocrelizumab bij primary progressive MS",
+  "category": "intervention",
+  "subcategory": "anti-CD20",
+  "ms_context": [
+    "PPMS",
+    "progressive MS"
+  ],
+  "mechanism_summary": "Ocrelizumab is een anti-CD20 monoklonaal antilichaam dat CD20-positieve B-cellen depleteert. De PPMS-rationale is dat B-cellen bijdragen aan ontstekings- en progressieprocessen.",
+  "patient_summary": "Ocrelizumab is onderzocht bij primary progressive MS in een fase 3-studie. Deze entry vat bewijs op groepsniveau samen en is geen persoonlijk behandeladvies.",
+  "clinical_summary": "ORATORIO onderzocht ocrelizumab versus placebo bij PPMS. De primaire uitkomst was tijd tot clinical disability progression, bevestigd na minimaal 12 weken.",
+  "research_summary": "Deze entry is een kernanker voor progressieve MS omdat de studie een fase 3-progressie-uitkomst gebruikt en niet alleen relapse- of MRI-activiteit.",
+  "outcomes": [
+    "CDP",
+    "EDSS",
+    "T25-FW",
+    "MRI",
+    "brain volume",
+    "quality of life",
+    "safety"
+  ],
+  "evidence_level": "A",
+  "evidence_label": "Fase 3-publicatie en trialregistratie met disability progression als primaire uitkomst in PPMS.",
+  "trial_status": "completed_published",
+  "trial": {
+    "nct_id": "NCT01194570",
+    "trial_name": "ORATORIO",
+    "phase": "PHASE3",
+    "overall_status": "COMPLETED",
+    "enrollment_actual": 735,
+    "primary_outcome": "Time to onset of clinical disability progression sustained for at least 12 weeks",
+    "primary_outcome_measure": "EDSS-based CDP"
+  },
+  "result_summary": "PubMed abstract vermeldt 12-week CDP bij 32.9% met ocrelizumab versus 39.3% met placebo, hazard ratio 0.76, 95% CI 0.59 to 0.98, P=0.03. Voor 24-week CDP vermeldt het abstract 29.6% versus 35.7%, hazard ratio 0.75, 95% CI 0.58 to 0.98, P=0.04.",
+  "safety_notes": "PubMed abstract vermeldt vaker infusiegerelateerde reacties, bovensteluchtweginfecties en orale herpesinfecties met ocrelizumab dan met placebo. Neoplasmata werden vermeld bij 2.3% met ocrelizumab en 0.8% met placebo. Langetermijnveiligheid blijft een expliciet aandachtspunt.",
+  "open_questions": [
+    "Welke subgroepen uit ORATORIO zijn relevant voor publieke uitleg?",
+    "Hoe moet actuele behandelrichtlijncontext worden gekoppeld zonder behandeladvies te geven?",
+    "Welke veiligheidswaarschuwingen moeten standaard zichtbaar zijn?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28002688/",
+      "type": "peer_reviewed_publication",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed abstract beschrijft ORATORIO als fase 3-studie bij PPMS met lager percentage 12-week en 24-week confirmed disability progression bij ocrelizumab versus placebo."
+    },
+    {
+      "url": "https://clinicaltrials.gov/study/NCT01194570",
+      "type": "trial_registry",
+      "date_checked": "2026-07-13",
+      "claim": "ClinicalTrials.gov registreert ORATORIO als completed fase 3-studie bij PPMS met EDSS-gebaseerde CDP als primaire uitkomst."
+    }
+  ],
+  "last_reviewed": "2026-07-13",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen behandeladvies. Bespreek behandelkeuzes altijd met een bevoegde arts."
+}
+

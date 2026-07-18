@@ -1,0 +1,70 @@
+{
+  "id": "ocrelizumab-ppms-oratorio-hand",
+  "title": "Ocrelizumab ORATORIO-HAND bij gevorderde PPMS",
+  "category": "intervention",
+  "subcategory": "anti-CD20",
+  "ms_context": [
+    "PPMS",
+    "progressive MS"
+  ],
+  "mechanism_summary": "Ocrelizumab is een anti-CD20 monoklonaal antilichaam dat CD20-positieve B-cellen depleteert. ORATORIO-HAND testte of dit bij een bredere en meer gevorderde PPMS-populatie disability progression kan vertragen.",
+  "patient_summary": "ORATORIO-HAND wijst erop dat ocrelizumab bij een brede groep mensen met PPMS progressie kan vertragen, met bijzondere aandacht voor hand- en armfunctie. Het effect is niet genezend: in de samenvatting wordt ook genoemd dat een op de drie behandelde deelnemers alsnog achteruitging. Dit is geen persoonlijk behandeladvies.",
+  "clinical_summary": "ORATORIO-HAND was een fase 3b, placebo-gecontroleerde studie bij 1013 mensen met PPMS in 22 landen. De publieke samenvattingen melden 30% lagere kans op invaliditeitstoename en 41% minder achteruitgang op de 9-Hole Peg Test, met een absolute disability-progression uitkomst van 33% versus 40% na bijna drie jaar.",
+  "research_summary": "Dit record is apart gehouden van de oorspronkelijke ORATORIO-studie, omdat ORATORIO-HAND oudere en meer gevorderde PPMS-deelnemers includeerde en handfunctie expliciet zwaarder meeweegt. De interpretatie moet worden begrensd door industrie-financiering, bescheiden absolute effectgrootte, onbekende langetermijnwaarde en Europese indicatiecontext.",
+  "outcomes": [
+    "CDP",
+    "EDSS",
+    "9HPT",
+    "hand function",
+    "MRI",
+    "safety"
+  ],
+  "evidence_level": "A",
+  "evidence_label": "Fase 3b RCT met disability progression en 9-Hole Peg Test als progressiegerelateerde uitkomsten bij een bredere PPMS-populatie; klinische interpretatie en regulatoire vertaling vragen experttoetsing.",
+  "trial_status": "completed_published",
+  "trial": {
+    "trial_name": "ORATORIO-HAND",
+    "phase": "PHASE3B",
+    "overall_status": "COMPLETED",
+    "enrollment_actual": 1013,
+    "primary_outcome": "Composite confirmed disability progression",
+    "primary_outcome_measure": "EDSS or 9-Hole Peg Test"
+  },
+  "result_summary": "MSvereniging meldt 30% lagere kans op invaliditeitstoename bij ocrelizumab versus placebo, 41% minder achteruitgang op de 9-Hole Peg Test, en een absolute disability-progression uitkomst van 33% versus 40% na bijna drie jaar. Queen Mary University of London bevestigt dezelfde kerncijfers en meldt sterker effect bij deelnemers met MRI-activiteit.",
+  "safety_notes": "Het beoordeelde MSvereniging-artikel noemt financiering door Roche en onzekerheid over langetermijneffect, maar bevat geen compact veiligheidsblok. Voor publicatie moet een bronvaste veiligheidsparagraaf worden toegevoegd over infecties, infusiereacties, screening en individuele risicoweging.",
+  "open_questions": [
+    "Hoe moet de ORATORIO-HAND-populatie worden afgezet tegen de huidige Europese PPMS-indicatie voor vroege PPMS met inflammatoire activiteit?",
+    "Welke absolute effectmaat en number-needed-to-treat horen zichtbaar te zijn naast de relatieve risicoreductie?",
+    "Welke veiligheidstekst is nodig voordat dit record als publieke behandelcontext kan worden gepubliceerd?",
+    "Hoe moet het sterkere effect bij MRI-actieve deelnemers worden geformuleerd zonder off-label behandeladvies te suggereren?"
+  ],
+  "sources": [
+    {
+      "url": "https://doi.org/10.1016/S0140-6736(26)00617-3",
+      "type": "peer_reviewed_publication",
+      "date_checked": "2026-07-18",
+      "claim": "Lancet DOI voor de ORATORIO-HAND-publicatie over ocrelizumab bij een bredere PPMS-populatie."
+    },
+    {
+      "url": "https://msvereniging.nl/ocrevus-vertraagt-verlies-handfunctie-bij-gevorderde-ppms/",
+      "type": "patient_organization_article",
+      "date_checked": "2026-07-18",
+      "claim": "MSvereniging vat ORATORIO-HAND samen met 1013 deelnemers, 30% lagere kans op invaliditeitstoename, 41% minder achteruitgang op 9-Hole Peg Test, 33% versus 40% absolute uitkomst, Roche-financiering en onbekend langetermijneffect."
+    },
+    {
+      "url": "https://www.qmul.ac.uk/news/latest-news/2026/medicine-and-dentistry/fmd/drug-slows-progression-of-ms--.html",
+      "type": "university_news",
+      "date_checked": "2026-07-18",
+      "claim": "Queen Mary University of London bevestigt de kerncijfers, Lancet-publicatie en sterker effect bij de MRI-actieve subgroep."
+    },
+    {
+      "url": "https://www.ema.europa.eu/en/documents/product-information/ocrevus-epar-product-information_en.pdf",
+      "type": "regulatory_product_information",
+      "date_checked": "2026-07-18",
+      "claim": "EMA-productinformatie beperkt de PPMS-indicatie tot vroege PPMS met kenmerken van inflammatoire activiteit."
+    }
+  ],
+  "last_reviewed": "2026-07-18",
+  "review_status": "expert_review_requested",
+  "medical_disclaimer": "Researchsamenvatting, geen behandeladvies. Bespreek behandelkeuzes altijd met een bevoegde arts."
+}

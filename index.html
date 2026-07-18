@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MS Progression Evidence Map</title>
+    <link rel="stylesheet" href="site/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="kicker">Living evidence map</p>
+        <h1>MS Progression Evidence Map</h1>
+      </div>
+      <div class="topbar-actions">
+        <a
+          class="feedback-button"
+          href="https://github.com/aljenk/ms-progression-evidence-map/issues/new?template=pages-feedback.yml&title=Feedback%3A%20MS%20Progression%20Evidence%20Map&labels=feedback"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Feedback
+        </a>
+        <div class="repo-status" id="repoStatus">Data laden</div>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section class="intro-panel" aria-labelledby="introTitle">
+        <div class="intro-copy">
+          <p class="kicker">Researchoverzicht</p>
+          <h2 id="introTitle">Wat deze kaart wel en niet laat zien</h2>
+          <p>
+            Deze evidence map brengt onderzoek rond MS-progressie bij elkaar:
+            interventies, biomarkers, mechanismen, trials en structurele
+            hypothesen. Elk item is gekoppeld aan bronlinks, reviewstatus en
+            een korte claimbeperking.
+          </p>
+          <p>
+            De kaart is bedoeld voor research- en gespreksvoorbereiding. De
+            inhoud is geen diagnosehulp, geen behandeladvies en geen persoonlijke
+            prognose.
+          </p>
+        </div>
+        <div class="status-guide" aria-label="Statusuitleg">
+          <h3>Statussen</h3>
+          <dl>
+            <div>
+              <dt>Draft</dt>
+              <dd>Werkversie. Tekst of bronbasis is nog niet klaar voor gebruik.</dd>
+            </div>
+            <div>
+              <dt>Broncheck nodig</dt>
+              <dd>Discovery-item. Eerst primaire bronnen zoeken en claims begrenzen.</dd>
+            </div>
+            <div>
+              <dt>Brongecheckt</dt>
+              <dd>Bronlink en kernclaim zijn gecontroleerd, maar publicatie is nog niet automatisch gegeven.</dd>
+            </div>
+            <div>
+              <dt>Expertreview gevraagd</dt>
+              <dd>Pre-review item. Klaar voor domeinexpert, zichtbaar met extra voorzichtig label.</dd>
+            </div>
+            <div>
+              <dt>Expertreview verwerkt</dt>
+              <dd>Feedback is verwerkt in tekst, claimgrens en bronnen.</dd>
+            </div>
+            <div>
+              <dt>Gepubliceerd</dt>
+              <dd>Voldoet aan bron-, disclaimer-, review- en publicatiecriteria.</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="evidence-guide" aria-label="Uitleg bewijsniveau">
+          <h3>Bewijsniveau</h3>
+          <p>
+            Het bewijsniveau zegt hoe dicht een item bij klinisch
+            progressiebewijs staat. Het is geen ranglijst van behandelingen en
+            geen individuele prognose.
+          </p>
+          <dl>
+            <div>
+              <dt>A</dt>
+              <dd>Fase 3 of sterke klinische studie met progressie-uitkomst.</dd>
+            </div>
+            <div>
+              <dt>B</dt>
+              <dd>Klinisch MS-bewijs, maar zonder harde progressieclaim.</dd>
+            </div>
+            <div>
+              <dt>C</dt>
+              <dd>Biomarker-, imaging- of mechanistisch bewijs.</dd>
+            </div>
+            <div>
+              <dt>D</dt>
+              <dd>Computationele hypothese, zoals structuur- of omics-prioritering.</dd>
+            </div>
+            <div>
+              <dt>E</dt>
+              <dd>Open vraag met rationale, maar nog onvoldoende bewijs.</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="Samenvatting">
+        <div class="metric">
+          <span class="metric-label">Records</span>
+          <strong id="metricRecords">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Brongecheckt of later</span>
+          <strong id="metricChecked">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Expertreview gevraagd</span>
+          <strong id="metricExpert">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">MS Research items</span>
+          <strong id="metricMsResearch">0</strong>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Filters">
+        <label class="search-box">
+          <span>Zoeken</span>
+          <input id="searchInput" type="search" placeholder="Titel, ID, uitkomst of bron">
+        </label>
+        <label>
+          <span>Status</span>
+          <select id="statusFilter">
+            <option value="all">Alle statussen</option>
+          </select>
+        </label>
+        <label>
+          <span>Categorie</span>
+          <select id="categoryFilter">
+            <option value="all">Alle categorieen</option>
+          </select>
+        </label>
+        <label>
+          <span>Bewijsniveau</span>
+          <select id="levelFilter">
+            <option value="all">Alle niveaus</option>
+          </select>
+        </label>
+        <label>
+          <span>MS-context</span>
+          <select id="contextFilter">
+            <option value="all">Alle contexten</option>
+          </select>
+        </label>
+        <label>
+          <span>Uitkomstmaat</span>
+          <select id="outcomeFilter">
+            <option value="all">Alle uitkomsten</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="workspace">
+        <aside class="record-list" aria-label="Evidence records">
+          <div class="list-head">
+            <h2>Evidence records</h2>
+            <span id="resultCount">0</span>
+          </div>
+          <div id="recordList" class="cards"></div>
+        </aside>
+
+        <section class="detail-pane" aria-live="polite">
+          <div id="recordDetail" class="detail-content">
+            <p class="empty-state">Selecteer een record.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Researchinformatie, geen medisch advies.</span>
+      <a href="MEDICAL-DISCLAIMER.md">Disclaimer</a>
+      <a href="LICENSE.md">Licentie</a>
+      <a href="data/index.csv">Data-index</a>
+    </footer>
+
+    <script src="site/app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "id": "paramagnetic-rim-lesions",
+  "title": "Paramagnetic rim lesions als MRI-marker van smoldering MS",
+  "category": "biomarker",
+  "subcategory": "MRI chronic active lesion marker",
+  "ms_context": [
+    "RRMS",
+    "SPMS",
+    "PPMS",
+    "PIRA",
+    "progressive MS"
+  ],
+  "mechanism_summary": "Paramagnetic rim lesions worden gezien als MRI-marker van chronisch actieve laesies en compartimentale ontsteking achter een relatief intacte bloed-hersenbarriere.",
+  "patient_summary": "PRL's zijn MRI-bevindingen die mogelijk wijzen op sluimerende ontsteking. Ze zijn nog niet hetzelfde als een standaard behandelkompas voor individuele keuzes.",
+  "clinical_summary": "PRL's worden onderzocht als marker van chronic active lesions. Recente literatuur koppelt CAL-biomarkers, waaronder PRL's, aan ernstiger structurele schade, klinische disability en ziekteprogressie.",
+  "research_summary": "PRL's zijn relevant voor progressie omdat ze een beeldvormend venster bieden op smoldering pathology. Methodologische standaardisatie, veldsterkte, detectieprotocol en longitudinale interpretatie blijven belangrijk.",
+  "outcomes": [
+    "MRI",
+    "cognition",
+    "disability progression",
+    "PIRA hypothesis",
+    "chronic active lesions"
+  ],
+  "evidence_level": "C",
+  "evidence_label": "Mechanistisch en klinisch beeldvormingsbewijs ondersteunt relevantie, maar klinische toepassing en standaardisatie blijven in ontwikkeling.",
+  "trial_status": "not_applicable",
+  "result_summary": "PubMed abstract van een 2026 studie vermeldt dat PRL's en choroid plexus volume bij diagnose geassocieerd waren met cognitive progression independent of relapse/MRI activity in early RRMS. Een 2026 review beschrijft PRL's als CAL-biomarker met biologische en klinische relevantie.",
+  "safety_notes": "Niet van toepassing als MRI-marker. Interpretatierisico: PRL-detectie hangt af van MRI-techniek en expertise.",
+  "open_questions": [
+    "Welke MRI-protocollen en veldsterktes zijn minimaal nodig voor betrouwbare PRL-detectie?",
+    "Moet PRL in de publieke kaart onder progressie, cognition of smoldering inflammation worden gefilterd?",
+    "Hoe voorkomen we dat PRL-status als individuele prognose wordt overgeclaimd?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42420786/",
+      "type": "clinical_imaging_study",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed abstract beschrijft associatie van PRL's en choroid plexus volume bij diagnose met cognitive progression independent of relapse/MRI activity in early RRMS."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41961242/",
+      "type": "narrative_review",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed abstract beschrijft PRL's, SELs en TSPO-PET laesies als imaging biomarkers van chronic active lesions met associatie met structurele schade, disability en disease progression."
+    }
+  ],
+  "last_reviewed": "2026-07-13",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen medisch advies. MRI-biomarkers moeten door bevoegde clinici en radiologen in context worden beoordeeld."
+}
+

@@ -1,0 +1,52 @@
+{
+  "id": "slowly-expanding-lesions",
+  "title": "Slowly expanding lesions als MRI-marker van chronische actieve laesies",
+  "category": "biomarker",
+  "subcategory": "MRI chronic active lesion marker",
+  "ms_context": [
+    "RRMS",
+    "SPMS",
+    "PPMS",
+    "PIRA",
+    "progressive MS"
+  ],
+  "mechanism_summary": "Slowly expanding lesions zijn laesies die over tijd subtiel uitbreiden op MRI en worden onderzocht als marker van chronische actieve demyelinisatie en smoldering inflammation.",
+  "patient_summary": "SELs zijn subtiele MRI-patronen die in onderzoek worden gebruikt om sluimerende laesieactiviteit te volgen. Ze zijn nog niet hetzelfde als een standaard uitslag voor persoonlijke behandelkeuzes.",
+  "clinical_summary": "SELs worden met longitudinale MRI-methoden gedetecteerd. Reviews beschrijven verbanden met chronic neuroinflammation, demyelinisatie, disability, microstructural damage en axonal degeneration.",
+  "research_summary": "SELs zijn waardevol voor trialdesign rond progressie en smoldering pathology, maar detectiemethoden verschillen en klinische routinevertaling vraagt standaardisatie.",
+  "outcomes": [
+    "MRI",
+    "disability progression",
+    "brain volume",
+    "chronic active lesions",
+    "PIRA hypothesis"
+  ],
+  "evidence_level": "C",
+  "evidence_label": "Systematische en scoping reviews ondersteunen biologische en prognostische relevantie, maar detectie en klinische toepassing zijn nog niet gestandaardiseerd.",
+  "trial_status": "not_applicable",
+  "result_summary": "Een 2026 scoping review identificeerde 33 studies over SEL-detectie met MRI en beschrijft SELs als kandidaat imaging biomarker van chronic inflammation. Een 2026 systematic review/meta-analysis rapporteert pooled SEL prevalence van 57.1% en associaties met disability en neurodegeneratieve schade.",
+  "safety_notes": "Niet van toepassing als MRI-marker. Interpretatierisico: SEL-detectie vereist longitudinale MRI en methodekeuzes kunnen uitkomsten beinvloeden.",
+  "open_questions": [
+    "Welke detectiemethode is geschikt voor een publieke evidence map?",
+    "Hoe tonen we overlap en verschil tussen SELs, PRLs en TSPO-PET laesies?",
+    "Welke trialendpoints gebruiken SELs al als uitkomstmaat?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42292345/",
+      "type": "scoping_review",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed abstract beschrijft een scoping review van 33 studies over detectie van SELs met MRI en hun relatie met markers van chronic inflammation en prognostische rol."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41874037/",
+      "type": "systematic_review_meta_analysis",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed abstract beschrijft SELs als radiologische marker van chronic active demyelination en smoldering inflammation, met associatie met disability worsening en brain atrophy."
+    }
+  ],
+  "last_reviewed": "2026-07-13",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen medisch advies. MRI-biomarkers vereisen klinische en radiologische context."
+}
+

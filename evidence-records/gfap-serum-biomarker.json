@@ -1,0 +1,51 @@
+{
+  "id": "gfap-serum",
+  "title": "Serum GFAP als progressie- en astrogliosebiomarker",
+  "category": "biomarker",
+  "subcategory": "fluid biomarker",
+  "ms_context": [
+    "SPMS",
+    "PPMS",
+    "PIRA",
+    "progressive MS"
+  ],
+  "mechanism_summary": "Glial fibrillary acidic protein is een astrocytaire marker. In MS wordt GFAP onderzocht als marker voor gliale activatie en progressiegerelateerde biologie.",
+  "patient_summary": "GFAP is een onderzoeksmarker in bloed die mogelijk iets zegt over gliale schade of activatie. Het is nog geen zelfstandig instrument om persoonlijke behandeling te kiezen.",
+  "clinical_summary": "GFAP wordt samen met NfL onderzocht voor prognose en monitoring. De klinische interpretatie vereist subtype, ziekteactiviteit, leeftijd, assayplatform en comorbiditeit.",
+  "research_summary": "De systematische review/meta-analyse uit 2026 beoordeelt NfL en GFAP over MS-subtypen en ziekteactiviteitspatronen. GFAP is relevant als mogelijke progressiebiomarker, maar standaardisatie en klinische beslisgrenzen blijven open vragen.",
+  "outcomes": [
+    "GFAP",
+    "EDSS",
+    "disability progression",
+    "PIRA hypothesis",
+    "brain volume hypothesis"
+  ],
+  "evidence_level": "B",
+  "evidence_label": "Systematische review/meta-analyse ondersteunt prognostische relevantie, maar klinische toepassing is nog begrensd.",
+  "trial_status": "not_applicable",
+  "result_summary": "PubMed metadata en abstract beschrijven GFAP samen met NfL als onderzochte bloedbiomarkers voor diagnostische en prognostische waarde bij MS-subtypen en ziekteactiviteitspatronen.",
+  "safety_notes": "Niet van toepassing als biomarker. Belangrijkste risico is overinterpretatie van een laboratoriumwaarde zonder klinische context.",
+  "open_questions": [
+    "Is GFAP sterker gekoppeld aan progressie dan aan relapse-activiteit in de geselecteerde bronnen?",
+    "Welke assay- en z-scoremethoden moeten worden genoemd?",
+    "Welke rol krijgt GFAP naast NfL in de publieke kaart?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42322442/",
+      "type": "systematic_review_meta_analysis",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed abstract beschrijft een systematische review en meta-analyse over prognostische waarde van NfL en GFAP in MS-subtypen en ziekteactiviteitspatronen."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42429990/",
+      "type": "clinical_biomarker_study",
+      "date_checked": "2026-07-13",
+      "claim": "PubMed metadata beschrijft platform-agnostic Z score analyse van serum NfL en GFAP in ocrelizumab-behandelde MS."
+    }
+  ],
+  "last_reviewed": "2026-07-13",
+  "review_status": "source_checked",
+  "medical_disclaimer": "Researchsamenvatting, geen medisch advies. Biomarkers zijn ondersteunend en niet zelfstandig diagnostisch of therapeutisch."
+}
+

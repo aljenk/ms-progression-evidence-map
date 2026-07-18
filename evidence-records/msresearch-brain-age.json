@@ -1,0 +1,54 @@
+{
+  "id": "msresearch-brain-age",
+  "title": "Brain age als MRI-biomarker voor disability accumulation",
+  "category": "biomarker",
+  "subcategory": "MRI; machine learning; brain age",
+  "ms_context": [
+    "MS",
+    "CIS",
+    "SPMS",
+    "progressive MS"
+  ],
+  "mechanism_summary": "Brain-age modellen schatten op MRI of hersenen ouder lijken dan verwacht. In MS kan advanced brain age neurodegeneratieve schade weerspiegelen, maar het is niet specifiek voor MS.",
+  "patient_summary": "Onderzoek gebruikt soms hersenleeftijdmodellen om schade op MRI samen te vatten. Dit is een onderzoeksmaat en geen persoonlijke voorspelling zonder klinische context.",
+  "clinical_summary": "Een groot MS PATHS-onderzoek vond dat advanced predicted brain age samenhing met disability en latere disability accumulation. Een multicenterstudie vond hogere brain-PAD bij MS, vooral SPMS, en associatie met time-to-disability progression.",
+  "research_summary": "Brain age kan als neurodegeneratie-biomarkerlaag worden opgenomen. Claimbeperking is essentieel: niet specifiek voor MS, afhankelijk van model en dataset, en niet beter dan alle bestaande volumematen.",
+  "outcomes": [
+    "brain volume",
+    "EDSS",
+    "CDP",
+    "MRI"
+  ],
+  "evidence_level": "B",
+  "evidence_label": "Longitudinale MRI-cohortstudies koppelen brain-age maten aan disability en disability accumulation, met duidelijke niet-specificiteit.",
+  "trial_status": "not_applicable",
+  "safety_notes": "Niet van toepassing als biomarker. Interpretatierisico: machine-learning score niet als individuele prognose of behandeladvies presenteren.",
+  "open_questions": [
+    "Welke brain-age methode is reproduceerbaar genoeg voor vergelijking tussen centra?",
+    "Moet brain age apart staan of onder hersenatrofie en neurodegeneratie vallen?",
+    "Hoe verhouden brain-age modellen zich tot genormaliseerd hersenvolume?"
+  ],
+  "sources": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37119507/",
+      "type": "peer_reviewed_publication",
+      "date_checked": "2026-07-15",
+      "claim": "MS PATHS-analyse beschrijft advanced predicted brain age bij MS en associatie met disability accumulation."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10270248/",
+      "type": "open_access_full_text",
+      "date_checked": "2026-07-15",
+      "claim": "Full text noemt brain age een niet-specifieke maar makkelijk te schatten imaging biomarker die disability accumulation kan voorspellen."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32285956/",
+      "type": "peer_reviewed_publication",
+      "date_checked": "2026-07-15",
+      "claim": "Longitudinale multicenterstudie beschrijft hogere brain-PAD bij MS, hoogste waarden bij SPMS en associatie met time-to-disability progression."
+    }
+  ],
+  "last_reviewed": "2026-07-15",
+  "review_status": "expert_review_requested",
+  "medical_disclaimer": "Researchsamenvatting, geen medisch advies. MRI-biomarkers en machine-learning scores vereisen klinische context."
+}
