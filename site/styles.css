@@ -42,6 +42,12 @@ a {
   background: #fbfcfa;
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .kicker {
   margin: 0 0 4px;
   color: var(--accent-strong);
@@ -85,6 +91,40 @@ h3 {
   color: var(--muted);
   font-size: 0.86rem;
   text-align: center;
+}
+
+.feedback-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--accent-strong);
+  border-radius: 8px;
+  background: var(--accent-strong);
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.feedback-button:hover,
+.feedback-button:focus-visible {
+  background: var(--accent);
+  outline: none;
+}
+
+.feedback-button.secondary {
+  border-color: var(--line);
+  background: var(--panel);
+  color: var(--accent-strong);
+}
+
+.feedback-button.secondary:hover,
+.feedback-button.secondary:focus-visible {
+  border-color: var(--accent);
+  background: var(--panel-alt);
 }
 
 .app-shell {
@@ -383,6 +423,13 @@ select {
   gap: 14px;
 }
 
+.detail-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+}
+
 .level-badge {
   display: inline-grid;
   place-items: center;
@@ -527,7 +574,13 @@ li + li {
     text-align: left;
   }
 
-  .detail-title-row {
+  .detail-title-row,
+  .detail-actions {
+    flex-direction: column;
+  }
+
+  .topbar-actions {
+    align-items: stretch;
     flex-direction: column;
   }
 }

@@ -33,6 +33,8 @@ const checkedStatuses = new Set([
   "published",
 ]);
 
+const feedbackIssueBase = "https://github.com/aljenk/ms-progression-evidence-map/issues/new";
+
 const els = {
   repoStatus: document.querySelector("#repoStatus"),
   metricRecords: document.querySelector("#metricRecords"),
@@ -189,6 +191,44 @@ function chip(text, className = "") {
   span.className = `chip ${className}`.trim();
   span.textContent = text;
   return span;
+}
+
+function feedbackUrl(record) {
+  const params = new URLSearchParams({
+    template: "pages-feedback.yml",
+    labels: "feedback",
+  });
+
+  if (record) {
+    params.set("title", `Feedback: ${record.id}`);
+    params.set("record_id", record.id);
+    params.set(
+      "page_context",
+      [
+        `Record ID: ${record.id}`,
+        `Titel: ${record.title}`,
+        `Reviewstatus: ${record.review_status}`,
+        `Bewijsniveau: ${record.evidence_level}`,
+        `Recordpad: ${record.record_path || ""}`,
+        `Pagina: ${window.location.href}`,
+      ].join("\n"),
+    );
+  } else {
+    params.set("title", "Feedback: MS Progression Evidence Map");
+    params.set("page_context", `Pagina: ${window.location.href}`);
+  }
+
+  return `${feedbackIssueBase}?${params.toString()}`;
+}
+
+function feedbackLink(record) {
+  const link = document.createElement("a");
+  link.className = "feedback-button secondary";
+  link.href = feedbackUrl(record);
+  link.target = "_blank";
+  link.rel = "noreferrer";
+  link.textContent = record ? "Feedback op record" : "Feedback";
+  return link;
 }
 
 function renderMetrics() {
@@ -391,7 +431,10 @@ function renderDetail(record) {
   const level = document.createElement("div");
   level.className = "level-badge";
   level.textContent = record.evidence_level || "?";
-  row.append(titleWrap, level);
+  const actions = document.createElement("div");
+  actions.className = "detail-actions";
+  actions.append(level, feedbackLink(record));
+  row.append(titleWrap, actions);
 
   const chips = document.createElement("div");
   chips.className = "chip-row";

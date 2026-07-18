@@ -1,0 +1,54 @@
+name: Pages feedback
+description: Geef feedback op de publieke evidence map of op een recordkaart.
+title: "Feedback: "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gebruik dit voor correcties, ontbrekende context, bronvragen of websitefeedback.
+        Deel geen persoonlijke medische gegevens.
+  - type: input
+    id: record_id
+    attributes:
+      label: Record ID
+      description: Vul in als de feedback over een specifiek evidence-record gaat.
+      placeholder: ocrelizumab-ppms-oratorio-hand
+    validations:
+      required: false
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: Type feedback
+      options:
+        - Medische of wetenschappelijke correctie
+        - Bron of DOI toevoegen
+        - Claimgrens of nuance
+        - Website of toegankelijkheid
+        - Overig
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: Beschrijf concreet wat aangepast, gecontroleerd of verduidelijkt moet worden.
+      placeholder: Deze formulering kan te sterk zijn omdat...
+    validations:
+      required: true
+  - type: textarea
+    id: source_links
+    attributes:
+      label: Bronnen
+      description: Plaats relevante bronlinks, DOI's of richtlijnen. Een link per regel.
+    validations:
+      required: false
+  - type: textarea
+    id: page_context
+    attributes:
+      label: Pagina-context
+      description: Automatisch ingevulde of handmatig toegevoegde context uit de Pages-site.
+      placeholder: URL, recordtitel, reviewstatus, bewijsniveau.
+    validations:
+      required: false

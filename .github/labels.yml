@@ -25,3 +25,6 @@
 - name: publication-ready
   color: "006b75"
   description: Passed source and review checks for publication.
+- name: feedback
+  color: "bfd4f2"
+  description: Feedback from the public GitHub Pages evidence map.
