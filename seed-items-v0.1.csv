@@ -3,6 +3,7 @@ btk-tolebrutinib-hercules,Tolebrutinib HERCULES bij non-relapsing SPMS,intervent
 btk-tolebrutinib-perseus,Tolebrutinib PERSEUS bij PPMS,trial,BTK inhibitor,PPMS,CDP;EDSS;safety,E,source_checked,https://clinicaltrials.gov/study/NCT04458051,Volg trialstatus en publicatie
 btk-target,BTK als target,target,immune signaling,progressive MS;PIRA,mechanism;structure,C,draft,https://www.uniprot.org/uniprotkb/Q06187/entry,Maak targetfiche met UniProt en structuurlaag
 ocrelizumab-ppms,Ocrelizumab bij PPMS,intervention,anti-CD20,PPMS,CDP;MRI;safety,A,source_checked,https://pubmed.ncbi.nlm.nih.gov/28002688/,ORATORIO veiligheidsdetails en richtlijncontext toevoegen
+ocrelizumab-ppms-oratorio-hand,Ocrelizumab ORATORIO-HAND bij gevorderde PPMS,intervention,anti-CD20,PPMS;progressive MS,CDP;EDSS;9HPT;hand function;safety,A,expert_review_requested,https://doi.org/10.1016/S0140-6736(26)00617-3,Expertreview over indicatiegrens absolute effectmaat en veiligheidstekst verwerken
 rituximab-spms-ppms,Rituximab in progressieve MS,intervention,anti-CD20,SPMS;PPMS,CDP;MRI;safety,B,draft,,Systematische review zoeken
 cd20-target,CD20 als B-cel target,target,B-cell biology,progressive MS,mechanism;clinical response,C,draft,,Targetfiche maken
 cd40l-target,CD40L/CD40 route,target,costimulation,progressive MS;immune activation,mechanism;safety,C,draft,,Bronnen en veiligheidscontext toevoegen
